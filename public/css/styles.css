@@ -1,0 +1,26 @@
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings, helpers or functions. They have no direct output.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in the project.
+*/
+body {
+  font-family: "Mulish", sans-serif; }
+
+h1 {
+  font-family: "Arvo", serif; }
+
+/* Additonal Base Stylesheets */
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating to a reusable component.
+*/
+/* Additonal Component Stylesheets */
+/*
+This file is used to contain all component imports.
+Files inside this folder can contain specific element styles and layout. 
+*/
