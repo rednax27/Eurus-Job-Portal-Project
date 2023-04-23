@@ -1,0 +1,10 @@
+<% 
+// Default values for the component
+buttonText = typeof buttonText !== 'undefined' ? buttonText : 'Button';
+buttonVariant = typeof buttonVariant !== 'undefined' ? buttonVariant : 'primary';
+%>
+
+<!-- Button component -->
+<button class="btn btn-<%= buttonVariant %>">
+  <%= buttonText %>
+</button>
