@@ -1,4 +1,4 @@
-## Job Portal Multi-page Static Front-End Project
+# Job Portal Multi-page Static Front-end Project
 
 Capstone Project
 
@@ -8,7 +8,7 @@ Capstone Project
 - EJS
 - Express
 - Express EJS Layouts
-- TailwindCSS
+- Tailwind
 
 ## How to Run
 
@@ -20,11 +20,7 @@ npm install
 npm run start
 ```
 
-## Compile Tailwind CSS (use a seperate terminal for each command)
-
-```
-npm run dev
-```
+## Compile Tailwind CSS
 
 ```
 npm run devcss
