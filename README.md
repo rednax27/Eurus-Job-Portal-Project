@@ -20,7 +20,11 @@ npm install
 npm run start
 ```
 
-## Compile Tailwind CSS
+## Compile Tailwind CSS (use seperate terminals for each command)
+
+```
+npm run dev
+```
 
 ```
 npm run devcss
