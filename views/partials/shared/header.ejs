@@ -1,56 +1,39 @@
-<nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-  <div class="flex lg:flex-1">
-    <a href="#" class="-m-1.5 p-1.5">
-      <span class="sr-only">Your Company</span>
-      <img
-        class="h-8 w-auto"
-        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-        alt=""
-      />
-    </a>
+<header class="flex max-w-[100%] justify-evenly items-center bg-blue-500 py-4">
+  <div class="flex gap-2">
+    <img src="assets/images/Vector.svg" alt="" class="w-[50px]" />
+    <p class="text-white text-2xl">Eurus</p>
   </div>
-  <div class="flex lg:hidden">
+  <div class="flex gap-2">
+    <img src="assets/images/archive.svg" alt="" class="" />
+    <p class="text-white text-sm">BROWSE JOBS</p>
+  </div>
+  <div class="">
+    <input
+      type="text"
+      class="rounded-3xl text-sm bg-inherit border-white border placeholder-white w-[20vw]"
+      name=""
+      placeholder="KEYWORD SEARCH"
+    />
+  </div>
+  <nav class="flex gap-5">
+    <a href="" class="text-white text-sm">HOME</a>
+    <a href="" class="text-white text-sm">FREELANCERS</a>
+    <a href="" class="text-white text-sm">EMPLOYERS</a>
+    <a href="" class="text-white text-sm">ABOUT US</a>
+    <a href="" class="text-white text-sm">SERVICES</a>
+    <a href="" class="text-white text-sm">BLOG</a>
+    <a href="" class="text-white text-sm">CONTACT</a>
+  </nav>
+  <div class="flex gap-4">
     <button
-      type="button"
-      class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+      class="border-white border text-white text-md py-2 px-4 rounded-3xl"
     >
-      <span class="sr-only">Open main menu</span>
-      <svg
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
+      Log-in
+    </button>
+    <button
+      class="border-white border bg-white text-black text-md py-2 px-4 rounded-3xl"
+    >
+      Sign-up
     </button>
   </div>
-  <div class="hidden lg:flex lg:gap-x-12">
-    <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-      >Product</a
-    >
-
-    <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-      >Features</a
-    >
-
-    <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-      >Marketplace</a
-    >
-
-    <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-      >Company</a
-    >
-  </div>
-  <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-    <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-      >Log in <span aria-hidden="true">&rarr;</span></a
-    >
-  </div>
-</nav>
+</header>
