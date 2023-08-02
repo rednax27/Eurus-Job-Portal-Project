@@ -18,14 +18,20 @@ app.get("/about", function (req, res) {
   res.render("pages/about");
 });
 
-app.get("/login", function (req, res) {
-  res.render("pages/login", {
+app.get("/login_freelancer", function (req, res) {
+  res.render("pages/login_freelancer", {
     layout: "./layouts/authentication",
   });
 });
 
-app.get("/registration", function (req, res) {
-  res.render("pages/registration", {
+app.get("/login_employer", function (req, res) {
+  res.render("pages/login_employer", {
+    layout: "./layouts/authentication",
+  });
+});
+
+app.get("/signup_employer", function (req, res) {
+  res.render("pages/signup_employer", {
     layout: "./layouts/authentication",
   });
 });
