@@ -8,16 +8,12 @@ Capstone Project
 - EJS
 - Express
 - Express EJS Layouts
-- Tailwind
+- Tailwind CSS
 
 ## How to Run
 
 ```
 npm install
-```
-
-```
-npm run start
 ```
 
 ## Compile Tailwind CSS (use seperate terminals for each command)
