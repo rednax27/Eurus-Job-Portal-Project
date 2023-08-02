@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        markazi: ['Markazi', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
       },
       colors: {
         'mountain-meadow': {
