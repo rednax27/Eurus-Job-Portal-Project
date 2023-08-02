@@ -733,12 +733,6 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-\[10vh\] {
-  height: 10vh;
-}
-.h-\[5vh\] {
-  height: 5vh;
-}
 .max-h-12 {
   max-height: 3rem;
 }
@@ -1469,6 +1463,11 @@ video {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
+.focus\:border-indigo-500:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
+}
+
 .focus\:outline-offset-0:focus {
   outline-offset: 0px;
 }
@@ -1489,6 +1488,11 @@ video {
 .focus\:ring-indigo-600:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-indigo-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
 
 .focus-visible\:outline:focus-visible {

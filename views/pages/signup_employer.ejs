@@ -1,0 +1,104 @@
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-50">
+  <body class="h-full">
+  ```
+-->
+
+<% title = "Log in" %>
+
+
+<div class="container mx-auto h-screen flex items-center justify-center">
+  <div class="grid sm:grid-cols-2 gap-4 items-center px-2">
+    <div class="w-full h-full flex flex-col items-center justify-center">
+      <img src="../assets/images/image_people.svg" alt="SVG Image" class="w-[20rem] h-[20rem]" />
+      <p class="text-sm text-gray-600">
+        Already User? <a href="#" class="text-indigo-600">Sign in Now</a>.
+      </p>
+    </div>
+<div class="flex flex-col gap-2 ">
+    <h1 class="mb-4 text-2xl font-semibold">Sign up for free.</h1>
+    <p class="mb-4 text-gray-600">
+      Join Thousands of Companies That Use Atherna Every Day!
+    </p>
+    <div class="text-left mb-4">
+      <label for="email-address">Email address</label>
+      <input
+        type="text"
+        placeholder="Your email address"
+        class="w-full rounded-3xl border px-3 py-2.5 text-sm outline-none focus:border-indigo-500"
+      />
+    </div>
+    <div class="text-left mb-4">
+      <label for="company-name">Company name</label>
+      <input
+        type="text"
+        placeholder="Your company name"
+        class="w-full rounded-3xl border px-3 py-2.5 text-sm outline-none focus:border-indigo-500"
+      />
+    </div>
+    <div class="text-left mb-4">
+      <label for="company-name">Company Industry</label>
+      <input
+        type="text"
+        placeholder="Please select maximum 3 industries"
+        class="w-full rounded-3xl border px-3 py-2.5 text-sm outline-none focus:border-indigo-500"
+      />
+    </div>
+    <div class="text-left mb-4">
+      <label for="company-name">Password</label>
+      <input
+        type="Password"
+        placeholder="Enter your password"
+        class="w-full rounded-3xl border px-3 py-2.5 text-sm outline-none focus:border-indigo-500"
+      />
+    </div>
+    <div class="text-left mb-4">
+      <label for="company-name">Password</label>
+      <input
+        type="Password"
+        placeholder="Retype your password"
+        class="w-full rounded-3xl border px-3 py-2.5 text-sm outline-none focus:border-indigo-500"
+      />
+    </div>
+    <div class="mb-4 flex items-center justify-between">
+      <label class="flex items-center">
+        <input
+          type="checkbox"
+          class="h-4 w-4 text-indigo-600 focus:ring-indigo-500"
+        />
+        <span class="ml-2 text-sm text-gray-600"
+          >I have read & Accept Athena Privacy Policy and Terms of Use</span
+        >
+      </label>
+    </div>
+    <button
+      class="w-full rounded-full bg-gradient-to-l bg-teal-500 py-2 font-semibold text-white"
+    >
+      Signup
+    </button>
+    <p class="mt-4 text-left text-sm text-gray-600">
+      By registering you confirm that you accept the
+      <a href="#" class="text-indigo-600"
+        >Terms and Conditions
+          <span class="text-gray-600">and</span> <a href="#" class="text-indigo-600">Privacy Policy</a>
+        </p>
+    </p>
+</div>
+</div>
