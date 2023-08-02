@@ -1,4 +1,200 @@
-<header class="flex max-w-[100%] justify-evenly items-center bg-blue-500 py-4">
+<div
+  class="bg-[url('unsplash.jpg')] bg-cover w-[100%]"
+  x-data="{ openMenu : false }"
+  :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
+>
+  <style>
+    [x-cloak] {
+      display: none !important;
+    }
+  </style>
+
+  <header
+    class="flex justify-around items-center bg-blue-500 drop-shadow-sm py-8 px-8 w-[100%]"
+  >
+    <!-- Logo -->
+    <div class="flex gap-2">
+      <img src="assets/images/Vector.svg" alt="" class="w-[25px] lg:w-[40px]" />
+      <p class="text-white text-2xl">Eurus</p>
+    </div>
+    <div class="hidden gap-2 sm:flex">
+      <img
+        src="assets/images/archive.svg"
+        alt=""
+        class="w-[25px] lg:w-[35px]"
+      />
+      <p class="text-white text-sm">BROWSE JOBS</p>
+    </div>
+    <div class="hidden sm:inline-flex">
+      <input
+        type="text"
+        class="rounded-3xl text-xs bg-inherit border-white border placeholder-white w-[15vw] h-[5vh] text-left px-2"
+        name=""
+        placeholder="KEYWORD SEARCH"
+      />
+    </div>
+    <!-- Mobile Menu Toggle -->
+    <button
+      class="flex xl:hidden flex-col items-center align-middle"
+      @click="openMenu = !openMenu"
+      :aria-expanded="openMenu"
+      aria-controls="mobile-navigation"
+      aria-label="Navigation Menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="white"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+      <span class="text-xs"></span>
+    </button>
+
+    <!-- Main Navigations -->
+    <nav class="hidden xl:flex">
+      <ul class="flex flex-row">
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Freelancers</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Employers</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="inline-flex py-2 px-3 hover:bg-slate-200 rounded text-md text-white font-semibold"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="hidden lg:flex gap-4">
+      <button
+        class="border-white border text-white text-md py-2 px-4 rounded-3xl"
+      >
+        Log-in
+      </button>
+      <button
+        class="border-white border bg-white text-black text-md py-2 px-4 rounded-3xl"
+      >
+        Sign-up
+      </button>
+    </div>
+  </header>
+
+  <!-- Pop Out Navigation -->
+  <nav
+    id="mobile-navigation"
+    class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-sm z-10"
+    :class="openMenu ? 'visible' : 'invisible' "
+    x-cloak
+  >
+    <!-- UL Links -->
+    <ul
+      class="absolute top-0 right-0 bottom-0 w-10/12 py-4 bg-white drop-shadow-2xl z-10 transition-all"
+      :class="openMenu ? 'translate-x-0' : 'translate-x-full'"
+    >
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4" aria-current="true">Home</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Freelancers</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Employers</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">About us</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Services</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Blog</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Contact</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Log-in</a>
+      </li>
+      <li class="border-b border-inherit">
+        <a href="#" class="block p-4">Sign-up</a>
+      </li>
+    </ul>
+
+    <!-- Close Button -->
+    <button
+      class="absolute top-0 right-0 bottom-0 left-0"
+      @click="openMenu = !openMenu"
+      :aria-expanded="openMenu"
+      aria-controls="mobile-navigation"
+      aria-label="Close Navigation Menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 absolute top-2 left-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="white"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </nav>
+</div>
+
+<!-- <header class="flex max-w-[100%] justify-evenly items-center bg-blue-500 py-4">
   <div class="flex gap-2">
     <img src="assets/images/Vector.svg" alt="" class="w-[50px]" />
     <p class="text-white text-2xl">Eurus</p>
@@ -36,4 +232,4 @@
       Sign-up
     </button>
   </div>
-</header>
+</header> -->
