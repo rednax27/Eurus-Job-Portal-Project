@@ -1,14 +1,14 @@
+# Job Portal Multi-page Static Front-end Project
 
-# Static Multi-Page Capstone Project
-
-Applying the skills learned in Month 1 to create a static multi-page website capstone project, showcasing your proficiency in HTML, CSS, and advanced web development principles.
+Capstone Project
 
 ## Technologies
 
+- Node.js
 - EJS
 - Express
 - Express EJS Layouts
-- Node Sass
+- Tailwind CSS
 
 ## How to Run
 
@@ -16,13 +16,12 @@ Applying the skills learned in Month 1 to create a static multi-page website cap
 npm install
 ```
 
-```
-npm run start
-```
-
-## Compile Sass
+## Compile Tailwind CSS (use seperate terminals for each command)
 
 ```
-npm run scss
+npm run dev
+```
 
+```
+npm run devcss
 ```

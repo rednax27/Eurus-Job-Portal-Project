@@ -1,18 +1,56 @@
+<% body %>
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><%= typeof title !== 'undefined' ? title : 'Default Title' %></title>
-  <link rel="stylesheet" href="static/css/styles.css" />
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"></script>
 
-<body>
-  <%- include('../partials/navigation'); %>
-  <main><%- body %></main>
-  <%- include('../partials/footer'); %>
-</body>
-
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    <%- include('../partials/shared/header'); %>
+    <main><%- body %></main>
+    <%- include('../partials/shared/footer'); %>
+  </body>
 </html>
+
+<!-- <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+    var typed = new Typed('.line-1', {
+      strings: ['Hello World', 'Hello Everyone'],
+      typeSpeed: 100,
+    });
+
+    ScrollReveal().reveal('.headline');
+  </script> -->
