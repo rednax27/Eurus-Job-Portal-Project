@@ -1085,6 +1085,7 @@ video {
 .border-b{
   border-bottom-width: 1px;
 }
+
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1096,6 +1097,7 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1348,6 +1350,7 @@ video {
 .tracking-tight{
   letter-spacing: -0.025em;
 }
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1386,6 +1389,22 @@ video {
 }
 .underline-offset-8{
   text-underline-offset: 8px;
+}
+.placeholder-\[\#7D7D7D\]::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(125 125 125 / var(--tw-placeholder-opacity));
+}
+.placeholder-\[\#7D7D7D\]::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(125 125 125 / var(--tw-placeholder-opacity));
+}
+.placeholder-black::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
+}
+.placeholder-black::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
 }
 .placeholder-white::-moz-placeholder{
   --tw-placeholder-opacity: 1;
@@ -1514,6 +1533,7 @@ video {
   outline-color: #4f46e5;
 }
 
+
 .hover\:bg-gray-50:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1522,6 +1542,11 @@ video {
 .hover\:bg-yellow-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#14BDB3\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(20 189 179 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-500:hover{
@@ -1534,8 +1559,17 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.hover\:overline:hover{
+  text-decoration-line: overline;
 }
 
 .focus\:border-indigo-500:focus{
