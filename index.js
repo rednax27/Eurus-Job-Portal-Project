@@ -42,5 +42,11 @@ app.get('/signup_freelancer', function (req, res) {
   });
 });
 
+app.get('/browse_jobs', function (req, res) {
+  res.render('pages/browse_jobs', {
+    layout: './layouts/authentication',
+  });
+});
+
 app.listen(3000);
 console.log('Server is running');
