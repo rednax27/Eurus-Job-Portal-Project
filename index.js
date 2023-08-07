@@ -11,8 +11,6 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('layout', './layouts/master');
 
-app.use('/', home);
-
 app.get('/', function (req, res) {
   res.render('pages/index');
 });
