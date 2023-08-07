@@ -7,7 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "dev": "node index",
+    "dev": "nodemon index",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devcss": "postcss public/assets/styles/global.css -o public/assets/styles/style.css -w"
   },
