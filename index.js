@@ -3,13 +3,15 @@ const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(expressLayouts);
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 app.set('layout', './layouts/master');
+
+app.use('/', home);
 
 app.get('/', function (req, res) {
   res.render('pages/index');
@@ -61,6 +63,6 @@ app.get('/browse-candidate', function (req, res) {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
