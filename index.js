@@ -48,5 +48,11 @@ app.get('/browse_jobs', function (req, res) {
   });
 });
 
+app.get('/job_details', function (req, res) {
+  res.render('pages/job_details', {
+    layout: './layouts/authentication',
+  });
+});
+
 app.listen(3000);
 console.log('Server is running');

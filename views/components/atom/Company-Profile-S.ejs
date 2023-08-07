@@ -1,0 +1,21 @@
+<div class="flex flex-col w-full items-center border border-black p-4">
+  <div class="flex flex-col gap-4 items-center">
+    <img
+      src="<%= companyLogo %>"
+      alt=""
+      class="border border-gray-300 rounded-full p-1"
+    />
+    <h3 class=""><%= companyName %></h3>
+    <div class="flex">
+      <p class=""><%= companyLocation %></p>
+      <p class="">" . "</p>
+      <p class=""><%= jobType %></p>
+    </div>
+    <div class="flex"><%= JobCategory %></div>
+  </div>
+  <div class="flex flex-col gap-4 h-[25%] mt-3 w-[40%]">
+    <%- include('./Button.ejs', {buttonText: "Apply Now", buttonVariant:
+    "primary"}); %> <%- include('./Button.ejs', {buttonText: "Save Job",
+    buttonVariant: "primary"}); %>
+  </div>
+</div>
