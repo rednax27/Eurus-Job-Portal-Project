@@ -3,6 +3,7 @@ const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(expressLayouts);
 app.use(express.static('public'));
@@ -60,5 +61,6 @@ app.get('/browse-candidate', function (req, res) {
   });
 });
 
-app.listen(3000);
-console.log('Server is running');
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
