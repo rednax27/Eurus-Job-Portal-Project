@@ -11,9 +11,29 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+  @apply rounded-3xl bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-center;
 }
 
 .btn-secondary {
   @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+
+/* Add this CSS to style the expanded job details */
+.job-details {
+  display: none;
+  /* Add styles for the expanded details container */
+}
+
+.job-card.expanded .job-details {
+  display: block;
+  /* Add styles to show the expanded details when the card is expanded */
+}
+
+.swiper-pagination {
+  bottom: -300px !important;
+  position: absolute;
+}
+
+.swiper-wrapper {
+  margin-bottom: 15px !important;
 }

@@ -10,89 +10,139 @@
   </style>
 
   <header
-    class="flex justify-around items-center drop-shadow-sm py-8 px-8 w-[100%]"
+    class="flex flex-col items-between justify-center drop-shadow-sm py-4 px-4 w-[100%] gap-2"
   >
-    <!-- Logo -->
-    <a href="/" class="flex gap-2 hover:underline underline-offset-8">
-      <div class="flex gap-2">
-        <img
-          src="assets/images/Vector.svg"
-          alt=""
-          class="w-[25px] lg:w-[40px]"
-        />
-        <p class="text-2xl">Eurus</p>
-      </div></a
-    >
+    <div class="flex gap-4 w-full">
+      <div class="flex gap-4 justify-evenly border border-black w-full">
+        <!-- Logo -->
+        <a href="/" class="flex gap-2 hover:underline underline-offset-8">
+          <div class="flex gap-2">
+            <img
+              src="assets/images/Vector.svg"
+              alt=""
+              class="w-[25px] lg:w-[40px]"
+            />
+            <p class="text-2xl">Eurus</p>
+          </div></a
+        >
+        <!-- Browse Jobs Button -->
+        <a
+          href="#"
+          class="flex gap-2 hover:overline hover:text-[#14BDB3] overline-offset-8"
+        >
+          <div class="hidden gap-2 sm:flex">
+            <img
+              src="assets/images/archive.svg"
+              alt=""
+              class="w-[25px] lg:w-[35px] hover:overline hover:text-[#14BDB3] overline-offset-8"
+            />
+            <p class="text-md">BROWSE JOBS</p>
+          </div></a
+        >
 
-    <a
-      href=""
-      class="flex gap-2 hover:overline hover:text-[#14BDB3] overline-offset-8"
-    >
-      <div class="hidden gap-2 sm:flex">
-        <img
-          src="assets/images/archive.svg"
-          alt=""
-          class="w-[25px] lg:w-[35px] hover:overline hover:text-[#14BDB3] overline-offset-8"
-        />
-        <p class="text-md">BROWSE JOBS</p>
-      </div></a
-    >
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="flex xl:hidden flex-col items-center align-middle"
+          @click="openMenu = !openMenu"
+          :aria-expanded="openMenu"
+          aria-controls="mobile-navigation"
+          aria-label="Navigation Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="black"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <span class="text-xs"></span>
+        </button>
 
-    <div class="hidden sm:inline-flex">
-      <input
-        type="text"
-        class="rounded-3xl text-xs border bg-[#EEF6F7] placeholder-[#7D7D7D] w-[15vw] h-[5vh] text-left px-2"
-        name=""
-        placeholder="KEYWORD SEARCH"
-      />
+        <!-- Main Navigations -->
+        <nav class="hidden xl:flex">
+          <ul class="flex flex-row">
+            <li>
+              <a
+                href="#"
+                class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="browse-candidate"
+                class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
+                >Freelancers</a
+              >
+            </li>
+            <li>
+              <a
+                href="browse-jobs"
+                class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
+                >Employers</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="about"
+                class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
+                >Connections</a
+              >
+            </li>
+            <li>
+              <a
+                href="job-details"
+                class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex w-[40%] gap-4 border border-black justify-evenly">
+        <div class="hidden lg:flex gap-4">
+          <a href="log-" class="">
+            <button
+              class="hover:bg-[#14BDB3] hover:text-white border-[#E1E1E1] border bg-white text-black text-md py-2 px-4 rounded-3xl"
+            >
+              Post a Job
+            </button></a
+          >
+        </div>
+        <%- include('../../components/atom/Header-2-Buttons.ejs',
+        {candidatePhoto:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg" }); %>
+      </div>
     </div>
-    <!-- Mobile Menu Toggle -->
-    <button
-      class="flex xl:hidden flex-col items-center align-middle"
-      @click="openMenu = !openMenu"
-      :aria-expanded="openMenu"
-      aria-controls="mobile-navigation"
-      aria-label="Navigation Menu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="black"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-      <span class="text-xs"></span>
-    </button>
-
-    <!-- Main Navigations -->
-    <nav class="hidden xl:flex">
-      <ul class="flex flex-row">
+    <div class="flex w-full justify-between border border-black">
+      <ul class="flex w-full">
         <li>
           <a
             href="#"
             class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Home</a
+            >Dashboard</a
           >
         </li>
         <li>
           <a
             href="browse-candidate"
             class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Freelancers</a
+            >My Projects</a
           >
         </li>
         <li>
           <a
             href="browse-jobs"
             class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Employers</a
+            >Inbox</a
           >
         </li>
 
@@ -100,45 +150,15 @@
           <a
             href="about"
             class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >About us</a
-          >
-        </li>
-        <li>
-          <a
-            href="job-details"
-            class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Services</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Blog</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
-            >Contact</a
+            >Feedback</a
           >
         </li>
       </ul>
-    </nav>
-    <div class="hidden lg:flex gap-4">
-      <a href="log-" class="">
-        <button
-          class="hover:bg-[#14BDB3] hover:text-white border-[#E1E1E1] border bg-white text-black text-md py-2 px-4 rounded-3xl"
-        >
-          Log-in
-        </button></a
-      >
-      <button
-        class="hover:bg-[#14BDB3] hover:text-white border border-[#E1E1E1] text-md py-2 px-4 rounded-3xl"
-      >
-        Sign-up
-      </button>
+      <div class="border border-black w-[10%]">
+        <a href="#" class="hover:bg-[#14BDB3] hover:text-green-500">
+          <p class="text-center">View Profile</p>
+        </a>
+      </div>
     </div>
   </header>
 

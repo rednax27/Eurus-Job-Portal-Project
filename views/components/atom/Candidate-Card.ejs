@@ -1,0 +1,57 @@
+<div
+  class="flex border border-black p-8 gap-6 text-xs job-card md:w-[100%]"
+  onclick="toggleDetails(this)"
+>
+  <div class="w-[20%] flex items-start md:w-[15%]">
+    <img
+      src="<%= candidatePhoto %>"
+      alt=""
+      class="rounded-full border border-gray-500 p-1 object-fill"
+    />
+  </div>
+  <div class="flex flex-col gap-1 w-[80%] md:w-[90%]">
+    <div class="flex justify-between w-full">
+      <div class="flex flex-col gap-4">
+        <p class=""><%= candidateName %></p>
+        <div class="flex gap-4">
+          <p class=""><%= candidateLocation %></p>
+          <p class=""><%= candidateWork %></p>
+        </div>
+      </div>
+      <%- include('./Button.ejs', {buttonText: "Hire Me", buttonVariant:
+      "primary"}); %>
+    </div>
+
+    <div class="flex flex-col gap-2 flex-wrap">
+      <div class="flex gap-4">
+        <p class="text-[10px]"><%= candidateSpecialization %></p>
+        <p class="text-[10px]"><%= candidateExperience %></p>
+        <p class="text-[10px]"><%= candidateHours %></p>
+      </div>
+      <div class="flex gap-1">
+        <p class="text-[10px]"><%= candidateIntroduction %></p>
+      </div>
+    </div>
+    <div class="job-details hidden">
+      <!-- Additional details content -->
+      <strong>Description:</strong>
+      <p><%= candidateDescription %></p>
+      <p>
+        <strong>Requirements:</strong> Ut consectetur risus in fringilla
+        maximus. Fusce non tincidunt eros, in pellentesque odio.
+      </p>
+      <p>
+        <strong>Benefits:</strong> Aliquam nec augue quis arcu vulputate
+        interdum non vel ex. Vivamus ut maximus neque. Donec tincidunt magna sit
+        amet orci placerat, non luctus mauris semper.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to toggle details -->
+<script>
+  function toggleDetails(card) {
+    card.classList.toggle('expanded');
+  }
+</script>

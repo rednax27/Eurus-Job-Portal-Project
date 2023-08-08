@@ -1,0 +1,453 @@
+<% title = "Browse Jobs" %> <%- include('../partials/shared/header'); %>
+
+<!-- hero container -->
+<div
+  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-center"
+>
+  <div class="flex flex-col">
+    <h1 class="">Browse Job on Eurus</h1>
+    <p class="">
+      Where the world meets startups, Millions of small businesses use
+      Freelancer to turn their ideas into reality
+    </p>
+  </div>
+</div>
+
+<div class="flex flex-wrap md:flex-nowrap">
+  <div
+    class="w-full p-0 flex flex-col md:flex-row justify-between border border-black"
+  >
+    <!-- Filters and Job List -->
+    <div class="w-full md:w-5/6 p-4">
+      <div class="flex flex-col gap-4 p-2 border border-black">
+        <p class="text-lg">Filter by:</p>
+        <div class="flex flex-wrap gap-8 border border-black justify-evenly">
+          <a href="" class="flex">Skills</a>
+          <a href="" class="flex">Job Type</a>
+          <a href="" class="flex">Skills</a>
+          <a href="" class="flex">Location</a>
+          <a href="" class="flex">Compensation</a>
+          <a href="" class="flex">Company</a>
+          <a href="" class="flex">Keywords</a>
+        </div>
+      </div>
+      <!-- job list -->
+      <div class="p-2">
+        <div id="jobCards" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="job-card">
+                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="job-card">
+                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="job-card">
+                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="job-card">
+                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.` }); %>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Find People and Featured Members -->
+    <div
+      class="w-full md:w-1/6 h-auto flex flex-col gap-8 border border-black p-8 items-center"
+    >
+      <div class="flex flex-col gap-4 items-around">
+        <h3 class="">Find People</h3>
+        <a href="" class="">Browse All</a>
+        <a href="" class="">Browse with my Skills</a>
+        <a href="" class="">Browse with top</a>
+        <a href="" class="">Browse Local Jobs</a>
+        <a href="" class="">Browse Categories</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="text-center">Featured Members</p>
+        <div class="flex flex-col gap-4">
+          <div class="job-card">
+            <%- include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            companyName: `John Smithasdasdasf`, companyLogo:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg" }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            companyName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            companyName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            companyName: `John Smithasdasdasf` }); %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%- include('../partials/shared/footer'); %>
+
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('#jobCards', {
+      slidesPerView: 1,
+      spaceBetween: 560,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</div>
+
+<%- include('../partials/shared/footer'); %>
