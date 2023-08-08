@@ -61,6 +61,12 @@ app.get('/browse-candidate', function (req, res) {
   });
 });
 
+app.get('/candidate-details', function (req, res) {
+  res.render('pages/candidate_details', {
+    layout: './layouts/authentication',
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
