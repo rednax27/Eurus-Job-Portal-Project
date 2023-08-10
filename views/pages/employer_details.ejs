@@ -26,6 +26,12 @@
         candidateBirthdate: `16/06/1987`, candidateGender:
         "Male",candidateCountry: `Germany`, candidateCity: `Berlin` }); %>
       </div>
+      <div class="flex justify-center items-center gap-4 p-8">
+        <%- include('../components/atom/Button.ejs', {buttonText: "Follow",
+        buttonVariant: "primary"}); %> <%-
+        include('../components/atom/Button.ejs', {buttonText: "Apply",
+        buttonVariant: "primary"}); %>
+      </div>
       <div class="flex justify-around border border-black items-center">
         <p class="">Portfolio</p>
         <div class="flex gap-4 items-center border border-black">
@@ -34,7 +40,7 @@
           >
             +
           </button>
-          <p class="">Add Portfolio</p>
+          <p class="">Project of Company</p>
         </div>
       </div>
       <div
@@ -84,59 +90,33 @@
       <div
         class="flex flex-col gap-4 p-2 border border-black w-full md:w-[70vw]"
       >
-        <%- include('../components/atom/Candidate-Profile', {
-        candidateSelfDescription: ` Lorem ipsum dolor sit amet consectetur
+        <%- include('../components/atom/Employer-Profile', {
+        employerSelfDescription: ` Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Assumenda ipsa minus vitae cupiditate aliquam expedita
         earum perspiciatis ullam, accusamus nobis laudantium iusto beatae
-        minima, adipisci velit omnis id, voluptas incidunt!`, candidateSkills:
-        `UI/UX Design`, candidateSkills2: `Web Design`, candidateSkills3:
-        `Mobile App Design`, candidateSkills4: `Branding`, candidateProfession:
-        `Product Design (web, Mobile App)`, candidatePastCompany: "7",
-        candidatePastCompany: `HKD Design`, candidateCompanyDuration:
-        `06/2010-Present`, candidateProfessionDescription: `Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Temporibus quaerat quos explicabo
-        error tempore veniam ad repudiandae maxime, minima cumque ducimus eius
-        amet eligendi magni non corrupti! Iste, reiciendis aliquam?`,
-        candidateSchool: `Hanoi College of Education`, candidateEducation:
-        `College`, candidateDegree: `Bachelor's Degree in Information
-        Technology`, candidateEducationPeriod: `08/2007-06/2010`,
-        candidateAward: `Excellent Staff`, candidateAwarder: `VNP`,
-        candidateAwardYear: `2015` }); %>
+        minima, adipisci velit omnis id, voluptas incidunt!`, employerSkills:
+        `UI/UX Design`, employerSkills2: `Web Design`, employerSkills3: `Mobile
+        App Design`, employerSkills4: `Branding`, employerProfession: `Product
+        Design (web, Mobile App)`, employerPastCompany: `HKD Design`,
+        employerCompanyDuration: `06/2010-Present`,
+        employerProfessionDescription: `Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Temporibus quaerat quos explicabo error tempore veniam
+        ad repudiandae maxime, minima cumque ducimus eius amet eligendi magni
+        non corrupti! Iste, reiciendis aliquam?`, employerSchool: `Hanoi College
+        of Education`, employerEducation: `College`, employerDegree: `Bachelor's
+        Degree in Information Technology`, employerEducationPeriod:
+        `08/2007-06/2010`, employerAward: `Excellent Staff`, employerAwarder:
+        `VNP`, employerAwardYear: `2015`, employerCompany: `Moontheme Studio
+        Inc.`, companyEmployeeCount: `25`, companyFields: `Web Services, Design
+        Services`,employerCompanyIntroduction: `Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Nam enim aliquam sapiente debitis error,
+        officia dicta optio, ipsam provident vitae animi, aliquid veritatis
+        totam? Voluptatibus aliquid unde excepturi est provident?`,
+        employerSalaryRange: `1000-1700`, employerWebsite: `www.moontheme.net`,
+        employerContact: `084-52315-3445`, employerLocation: `Hanoi, Vietnam`
+        }); %>
       </div>
       <!-- job list -->
-      <div class="w-full p-8 flex flex-col gap-4">
-        <p class="text-3xl font-bold">Feedback</p>
-        <div class="job-card">
-          <%- include('../components/atom/Feedback-Card', {candidateProfile:
-          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-          jobDone: `AI Technology That Takes Notes During Your Conversations`,
-          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
-          `Fast response! My app was ready next the next day. I would gladly
-          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
-          }); %><%- include('../components/atom/Feedback-Card',
-          {candidateProfile:
-          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-          jobDone: `AI Technology That Takes Notes During Your Conversations`,
-          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
-          `Fast response! My app was ready next the next day. I would gladly
-          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
-          }); %><%- include('../components/atom/Feedback-Card',
-          {candidateProfile:
-          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-          jobDone: `AI Technology That Takes Notes During Your Conversations`,
-          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
-          `Fast response! My app was ready next the next day. I would gladly
-          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
-          }); %> <%- include('../components/atom/Feedback-Card',
-          {candidateProfile:
-          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-          jobDone: `AI Technology That Takes Notes During Your Conversations`,
-          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
-          `Fast response! My app was ready next the next day. I would gladly
-          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
-          }); %>
-        </div>
-      </div>
     </div>
   </div>
 </div>
