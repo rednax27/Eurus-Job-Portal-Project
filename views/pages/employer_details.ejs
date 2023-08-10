@@ -1,0 +1,154 @@
+<% title = "Job Details" %> <%- include('../partials/shared/header-2'); %>
+<!-- hero container -->
+<div
+  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-end"
+>
+  <%- include('../components/atom/Hero-Photo', {candidatePhoto:
+  "assets/images/icons/Engineer-professions-jobs-worker-man.svg"}); %>
+</div>
+
+<div class="flex flex-wrap md:flex-nowrap w-full">
+  <div class="w-full p-0 flex flex-col md:flex-row justify-between">
+    <div class="w-full">
+      <div class="flex flex-col gap-4 p-2">
+        <%- include('../components/atom/Profile-Card', { candidateName: `John
+        Smith`, candidateSpecialization: `Product Design (web, Mobile App)`,
+        candidateExperience: "7", candidateHours: "48", connectionName:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        connectionName2:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        connectionName3:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        connectionName4:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",connectionNumbers:
+        `163`, followerCount: `290`, followingCount: "36",candidateEmail:
+        `johnsmith@gmail.com`,candidateContact: `0904968368`,
+        candidateBirthdate: `16/06/1987`, candidateGender:
+        "Male",candidateCountry: `Germany`, candidateCity: `Berlin` }); %>
+      </div>
+      <div class="flex justify-around border border-black items-center">
+        <p class="">Portfolio</p>
+        <div class="flex gap-4 items-center border border-black">
+          <button
+            class="flex items-center border border-black rounded-full px-2"
+          >
+            +
+          </button>
+          <p class="">Add Portfolio</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-4 justify-center items-center border border-black p-8 flex-wrap w-full"
+      >
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-4 p-2 border border-black w-full md:w-[70vw]"
+      >
+        <%- include('../components/atom/Candidate-Profile', {
+        candidateSelfDescription: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Assumenda ipsa minus vitae cupiditate aliquam expedita
+        earum perspiciatis ullam, accusamus nobis laudantium iusto beatae
+        minima, adipisci velit omnis id, voluptas incidunt!`, candidateSkills:
+        `UI/UX Design`, candidateSkills2: `Web Design`, candidateSkills3:
+        `Mobile App Design`, candidateSkills4: `Branding`, candidateProfession:
+        `Product Design (web, Mobile App)`, candidatePastCompany: "7",
+        candidatePastCompany: `HKD Design`, candidateCompanyDuration:
+        `06/2010-Present`, candidateProfessionDescription: `Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Temporibus quaerat quos explicabo
+        error tempore veniam ad repudiandae maxime, minima cumque ducimus eius
+        amet eligendi magni non corrupti! Iste, reiciendis aliquam?`,
+        candidateSchool: `Hanoi College of Education`, candidateEducation:
+        `College`, candidateDegree: `Bachelor's Degree in Information
+        Technology`, candidateEducationPeriod: `08/2007-06/2010`,
+        candidateAward: `Excellent Staff`, candidateAwarder: `VNP`,
+        candidateAwardYear: `2015` }); %>
+      </div>
+      <!-- job list -->
+      <div class="w-full p-8 flex flex-col gap-4">
+        <p class="text-3xl font-bold">Feedback</p>
+        <div class="job-card">
+          <%- include('../components/atom/Feedback-Card', {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %><%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %><%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %> <%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../partials/shared/footer'); %>
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('#jobCards', {
+    slidesPerView: 1,
+    spaceBetween: 560,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>

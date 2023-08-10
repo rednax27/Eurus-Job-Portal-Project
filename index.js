@@ -27,7 +27,7 @@ app.get('/login-freelancer', function (req, res) {
   });
 });
 
-app.get('/login_employer', function (req, res) {
+app.get('/login-employer', function (req, res) {
   res.render('pages/login_employer', {
     layout: './layouts/authentication',
   });
@@ -59,6 +59,12 @@ app.get('/job-details', function (req, res) {
 
 app.get('/browse-candidate', function (req, res) {
   res.render('pages/browse_candidate', {
+    layout: './layouts/authentication',
+  });
+});
+
+app.get('/employer-details', function (req, res) {
+  res.render('pages/employer_details', {
     layout: './layouts/authentication',
   });
 });
