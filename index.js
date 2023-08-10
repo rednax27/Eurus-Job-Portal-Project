@@ -12,7 +12,9 @@ app.set('view engine', 'ejs');
 app.set('layout', './layouts/master');
 
 app.get('/', function (req, res) {
-  res.render('pages/index');
+  res.render('pages/index', {
+    layout: './layouts/authentication',
+  });
 });
 
 app.get('/about', function (req, res) {

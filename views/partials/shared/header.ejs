@@ -1,5 +1,5 @@
 <div
-  class="bg-[url('unsplash.jpg')] bg-cover w-[100%]"
+  class="bg-[url('unsplash.jpg')] bg-cover w-[100%] z-10"
   x-data="{ openMenu : false }"
   :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
 >
@@ -25,7 +25,7 @@
     >
 
     <a
-      href=""
+      href="browse-jobs"
       class="flex gap-2 hover:overline hover:text-[#14BDB3] overline-offset-8"
     >
       <div class="hidden gap-2 sm:flex">
@@ -76,7 +76,7 @@
       <ul class="flex flex-row">
         <li>
           <a
-            href="#"
+            href="/"
             class="inline-flex py-2 px-3 hover:overline hover:text-[#14BDB3] overline-offset-8 rounded text-md font-semibold"
             >Home</a
           >
