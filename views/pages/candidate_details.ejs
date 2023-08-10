@@ -1,364 +1,140 @@
 <% title = "Job Details" %> <%- include('../partials/shared/header-2'); %>
 <!-- hero container -->
 <div
-  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-center"
+  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-end"
 >
-  <div class="flex flex-col">
-    <h1 class="">Browse Job on Eurus</h1>
-    <p class="">
-      Where the world meets startups, Millions of small businesses use
-      Freelancer to turn their ideas into reality
-    </p>
-  </div>
+  <%- include('../components/atom/Hero-Photo', {candidatePhoto:
+  "assets/images/icons/Engineer-professions-jobs-worker-man.svg"}); %>
 </div>
 
-<div class="flex flex-wrap md:flex-nowrap">
-  <div
-    class="w-full p-0 flex flex-col md:flex-row justify-between border border-black"
-  >
-    <!-- #profile section - Will be placed first in mobile view -->
-    <div
-      class="w-full md:w-1/4 flex flex-col gap-8 border border-black p-4 md:order-4"
-      id="profile"
-    >
-      <div class="flex flex-col gap-4">
-        <%- include('../components/atom/Company-Profile-S', { companyLogo:
+<div class="flex flex-wrap md:flex-nowrap w-full">
+  <div class="w-full p-0 flex flex-col md:flex-row justify-between">
+    <div class="w-full">
+      <div class="flex flex-col gap-4 p-2">
+        <%- include('../components/atom/Profile-Card', { candidateName: `John
+        Smith`, candidateSpecialization: `Product Design (web, Mobile App)`,
+        candidateExperience: "7", candidateHours: "48", connectionName:
         "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-        companyName: "Bubalus Company", companyLocation: "Hanoi, Vietnam",
-        jobType: "Full-time", JobCategory: `Web Services, Design Services` });
-        %>
+        connectionName2:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        connectionName3:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        connectionName4:
+        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",connectionNumbers:
+        `163`, followerCount: `290`, followingCount: "36",candidateEmail:
+        `johnsmith@gmail.com`,candidateContact: `0904968368`,
+        candidateBirthdate: `16/06/1987`, candidateGender:
+        "Male",candidateCountry: `Germany`, candidateCity: `Berlin` }); %>
       </div>
-    </div>
-
-    <div class="w-full md:w-3/4">
-      <div class="flex flex-col gap-4 p-2 border border-black">
-        <%- include('../components/atom/Job-Details-Full', { jobHeader: `Design
-        a Professional Website Magazine`, jobLocation: "Hanoi, Vietnam",
-        jobType: "Full-time", jobSalary: "$1000-1500", jobRoles: `Web Services,
-        Design Services`, jobReviews: "14", jobDescription: `Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Ducimus molestiae a explicabo,
-        quia maxime, quis accusamus veniam debitis neque voluptas libero saepe,
-        ex magnam nobis vitae excepturi quos reprehenderit. Odio.`,
-        jobRequirements: `Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quam, ea? Similique harum, incidunt, quaerat ullam impedit numquam
-        quae ducimus recusandae tenetur fugit officiis nihil odit molestiae
-        excepturi voluptates, culpa praesentium.`, skillRequired: `Graphic
-        Design, Banner Design, Logo Design, Photo Editing`, jobCategory: `Web
-        Services, Design Services`, employeeCount: "25-130", salaryRange:
-        `$1000-1700 USD/month`, companyWebsite: `www.loremipsum.com`,
-        companyLocation: `Berlin, Germany` }); %>
+      <div class="flex justify-around border border-black items-center">
+        <p class="">Portfolio</p>
+        <div class="flex gap-4 items-center border border-black">
+          <button
+            class="flex items-center border border-black rounded-full px-2"
+          >
+            +
+          </button>
+          <p class="">Add Portfolio</p>
+        </div>
+      </div>
+      <div
+        class="flex gap-4 justify-center items-center border border-black p-8 flex-wrap w-full"
+      >
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center border border-black gap-4 p-12"
+        >
+          <div
+            class="flex flex-col justify-center items-center border border-black p-2"
+          >
+            <p class="">+</p>
+            <p class="">Dwell Branding</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-4 p-2 border border-black w-full md:w-[70vw]"
+      >
+        <%- include('../components/atom/Candidate-Profile', {
+        candidateSelfDescription: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Assumenda ipsa minus vitae cupiditate aliquam expedita
+        earum perspiciatis ullam, accusamus nobis laudantium iusto beatae
+        minima, adipisci velit omnis id, voluptas incidunt!`, candidateSkills:
+        `UI/UX Design`, candidateSkills2: `Web Design`, candidateSkills3:
+        `Mobile App Design`, candidateSkills4: `Branding`, candidateProfession:
+        `Product Design (web, Mobile App)`, candidatePastCompany: "7",
+        candidatePastCompany: `HKD Design`, candidateCompanyDuration:
+        `06/2010-Present`, candidateProfessionDescription: `Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Temporibus quaerat quos explicabo
+        error tempore veniam ad repudiandae maxime, minima cumque ducimus eius
+        amet eligendi magni non corrupti! Iste, reiciendis aliquam?`,
+        candidateSchool: `Hanoi College of Education`, candidateEducation:
+        `College`, candidateDegree: `Bachelor's Degree in Information
+        Technology`, candidateEducationPeriod: `08/2007-06/2010`,
+        candidateAward: `Excellent Staff`, candidateAwarder: `VNP`,
+        candidateAwardYear: `2015` }); %>
       </div>
       <!-- job list -->
       <div class="w-full p-8 flex flex-col gap-4">
-        <p class="text-3xl font-bold">Featured Jobs</p>
-        <div id="jobCards" class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="job-card">
-                <%- include('../components/atom/Job-Card', {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="job-card">
-                <%- include('../components/atom/Job-Card', {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="job-card">
-                <%- include('../components/atom/Job-Card', {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="job-card">
-                <%- include('../components/atom/Job-Card', {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %> <%- include('../components/atom/Job-Card',
-                {companyLogo:
-                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-                jobListing: `AI Technology That Takes Notes During Your
-                Conversations`, employerName: "David Chrust", jobCategory:
-                `Frontend Software Engineer, Graphic Design`, jobSalary:
-                `$85000-90000`, jobType: `Full-Time`, jobLocation: "Bobland",
-                jobDescription: `Rapidly moving ahead, we leveraged our
-                technology to enable other publishers to distribute their
-                content digitally, with our mobile app as a service platform,
-                TruNext for iOS, Android, and Windows. We then started a life,
-                leadership and cultural destination website, with carefully
-                curated and original content. An overnight hit, it attracted 6
-                million hits in less than 1.5 months. All done faster than any
-                other major internet company, with zero marketing spends. Plash
-                Digital Labs is now home to newly re-branded entities like our
-                creative content site called Limitless, our mobile technology
-                division called Trunext, and our news aggregation app called
-                Daily Cup.` }); %>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
+        <p class="text-3xl font-bold">Feedback</p>
+        <div class="job-card">
+          <%- include('../components/atom/Feedback-Card', {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %><%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %><%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %> <%- include('../components/atom/Feedback-Card',
+          {candidateProfile:
+          "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+          jobDone: `AI Technology That Takes Notes During Your Conversations`,
+          jobCategory: "UI/UX Designer", jobPayment: `30-60`, clientFeedback:
+          `Fast response! My app was ready next the next day. I would gladly
+          hire again! Thanks!`, clientName: `Zebra`, feedbackDate: `6 days ago`
+          }); %>
         </div>
       </div>
     </div>

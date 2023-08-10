@@ -1,0 +1,24 @@
+<div
+  class="flex border border-black p-4 gap-6 text-xs job-card md:w-[100%]"
+  onclick="toggleDetails(this)"
+>
+  <div class="w-[20%] flex items-start md:w-[15%]">
+    <img
+      src="<%= candidateProfile %>"
+      alt=""
+      class="border border-gray-500 p-2 object-fill rounded-full"
+    />
+  </div>
+  <div class="flex flex-col gap-4 w-[80%] md:w-[90%]">
+    <p class=""><%= jobDone %></p>
+    <div class="flex gap-4">
+      <p class=""><%= jobCategory %></p>
+      <p class=""><%= jobPayment %> USD</p>
+    </div>
+    <p class=""><%= clientFeedback %></p>
+    <div class="flex gap-4">
+      <p class="">By <%= clientName %></p>
+      <p class=""><%= feedbackDate %></p>
+    </div>
+  </div>
+</div>

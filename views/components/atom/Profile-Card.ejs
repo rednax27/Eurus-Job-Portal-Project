@@ -1,0 +1,71 @@
+<div class="flex flex-col gap-4 w-full items-center p-8">
+  <div class="flex flex-col gap-4 border border-black text-sm w-full">
+    <p class="text-center"><%= candidateName %></p>
+    <div class="flex flex-col gap-4 items-center">
+      <p class=""><%= candidateSpecialization %></p>
+      <p class=""><%= candidateExperience %> Years of Experience</p>
+      <p class=""><%= candidateHours %> Number of hours per week</p>
+    </div>
+    <div class="flex gap-4 w-full justify-center flex-wrap">
+      <div
+        class="flex h-[40px] container border border-black justify-center w-full md:w-[30vw]"
+      >
+        <img
+          src="<%= connectionName %>"
+          alt=""
+          class="relative z-2 border border-black rounded-full bg-blue-400"
+        />
+        <img
+          src="<%= connectionName2 %>"
+          alt=""
+          class="relative z-3 border border-black rounded-full right-4 bg-blue-400"
+        />
+        <img
+          src="<%= connectionName3 %>"
+          alt=""
+          class="relative z-4 border border-black rounded-full right-6 bg-blue-400"
+        />
+        <img
+          src="<%= connectionName4 %>"
+          alt=""
+          class="relative z-5 border border-black rounded-full right-8 bg-blue-400"
+        />
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-6 border border-black justify-center md:items-center"
+      >
+        <p class=""><%= connectionNumbers %> Connections</p>
+        <p class=""><%= followerCount %> Followers</p>
+        <p class="">Following <%= followingCount %></p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-wrap w-full gap-4 border border-black justify-between p-4"
+  >
+    <div class="flex flex-col gap-4">
+      <p class="">EMAIL</p>
+      <p class=""><%= candidateEmail %></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <p class="">PHONE</p>
+      <p class=""><%= candidateContact %></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <p class="">DOB</p>
+      <p class=""><%= candidateBirthdate %></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <p class="">GENDER</p>
+      <p class=""><%= candidateGender %></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <p class="">COUNTRY</p>
+      <p class=""><%= candidateCountry %></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <p class="">PROVINCE/CITY</p>
+      <p class=""><%= candidateCity %></p>
+    </div>
+  </div>
+</div>
