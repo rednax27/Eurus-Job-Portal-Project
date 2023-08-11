@@ -1,50 +1,51 @@
 <div
-  class="flex border border-black p-8 gap-6 text-xs job-card md:w-[100%]"
+  class="flex flex-col md:flex-row border-2 border-gray-500 py-6 px-4 text-xs rounded-xl job-card md:w-[100%] mb-4 font-montserrat shadow-sm bg-[#fffbea] items-center md:items-start"
   onclick="toggleDetails(this)"
 >
   <div class="w-[20%] flex items-start md:w-[15%]">
     <img
       src="<%= candidatePhoto %>"
       alt=""
-      class="rounded-full border border-gray-500 p-1 object-fill"
+      class="rounded-full border-2 border-gray-500 object-fill bg-white p-2 "
     />
   </div>
   <div class="flex flex-col gap-1 w-[80%] md:w-[90%]">
-    <div class="flex justify-between w-full">
+    <div class="flex flex-col md:flex-row justify-between w-full">
       <div class="flex flex-col gap-4">
-        <p class=""><%= candidateName %></p>
-        <div class="flex gap-4">
-          <p class=""><%= candidateLocation %></p>
-          <p class=""><%= candidateWork %></p>
+        <p class="font-bold font-open text-lg text-[#13B0A7] text-center md:text-start">
+          <%= candidateName %>
+        </p>
+        <div class="flex justify-center gap-4 mb-4">
+          <p class="text-[12px] text-gray-500 text-center md:text-start"><%= candidateLocation %></p>
+          <p class="text-[12px] text-gray-500 text-center md:text-start"><%= candidateWork %></p>
         </div>
       </div>
-      <%- include('./Button.ejs', {buttonText: "Hire Me", buttonVariant:
-      "primary"}); %>
+      <div class="flex gap-8 mb-4 h-[60%] justify-center md:justify-normal">
+        <%- include('./Button.ejs', {buttonText: "Apply Now", buttonVariant:
+        "primary"}); %>
+      </div>
     </div>
 
     <div class="flex flex-col gap-2 flex-wrap">
-      <div class="flex gap-4">
-        <p class="text-[10px]"><%= candidateSpecialization %></p>
-        <p class="text-[10px]"><%= candidateExperience %></p>
-        <p class="text-[10px]"><%= candidateHours %></p>
+      <div class="flex gap-4 mb-4">
+        <p class="text-[12px] font-semibold"><%= candidateSpecialization %></p>
+        <p class="text-[12px] font-semibold"><%= candidateExperience %></p>
+        <p class="text-[12px] font-semibold"><%= candidateHours %></p>
       </div>
       <div class="flex gap-1">
-        <p class="text-[10px]"><%= candidateIntroduction %></p>
+        <p class="text-[12px]"><%= candidateIntroduction %></p>
       </div>
     </div>
-    <div class="job-details hidden">
+    <div class="job-details hidden mt-4">
       <!-- Additional details content -->
-      <strong>Description:</strong>
-      <p><%= candidateDescription %></p>
-      <p>
-        <strong>Requirements:</strong> Ut consectetur risus in fringilla
-        maximus. Fusce non tincidunt eros, in pellentesque odio.
+      <strong class="mb-2 ">Description:</strong>
+      <p class="mb-4"><br /><%= candidateDescription %></p>
+      <p class="mb-4">
+        <strong>Requirements:</strong><br /><br />
+        <%= candidateRequirements %>
       </p>
-      <p>
-        <strong>Benefits:</strong> Aliquam nec augue quis arcu vulputate
-        interdum non vel ex. Vivamus ut maximus neque. Donec tincidunt magna sit
-        amet orci placerat, non luctus mauris semper.
-      </p>
+
+      </div>
     </div>
   </div>
 </div>
