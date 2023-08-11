@@ -640,18 +640,6 @@ video {
 .z-50{
   z-index: 50;
 }
-.z-\[-5\]{
-  z-index: -5;
-}
-.z-\[-10\]{
-  z-index: -10;
-}
-.-z-50{
-  z-index: -50;
-}
-.-z-\[100\]{
-  z-index: -100;
-}
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -947,9 +935,6 @@ video {
 .h-\[3\.813rem\]{
   height: 3.813rem;
 }
-.h-\[30vh\]{
-  height: 30vh;
-}
 .h-\[38vh\]{
   height: 38vh;
 }
@@ -1013,9 +998,8 @@ video {
 .h-screen{
   height: 100vh;
 }
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
+.h-\[60vh\]{
+  height: 60vh;
 }
 .max-h-12{
   max-height: 3rem;
@@ -1186,9 +1170,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-.w-screen{
-  width: 100vw;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -1566,6 +1547,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 .bg-gray-400{
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -1610,10 +1595,6 @@ video {
 }
 .bg-white\/10{
   background-color: rgb(255 255 255 / 0.1);
-}
-.bg-gray-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'https\:\/\/images\.pexels\.com\/photos\/17637128\/pexels-photo-17637128\/free-photo-of-portrait-of-a-man-in-a-blue-shirt\.jpeg\?auto\=compress\&cs\=tinysrgb\&w\=1260\&h\=750\&dpr\=1\'\)\]{
   background-image: url('https://images.pexels.com/photos/17637128/pexels-photo-17637128/free-photo-of-portrait-of-a-man-in-a-blue-shirt.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -1662,15 +1643,6 @@ video {
 }
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-.bg-\[url\(\'https\:\/\/i\.imgur\.com\/yhmzgRa\.mp4\'\)\]{
-  background-image: url('https://i.imgur.com/yhmzgRa.mp4');
-}
-.bg-\[url\(\'assets\/images\/city\.gif\'\)\]{
-  background-image: url('assets/images/city.gif');
-}
-.bg-\[url\(\'public\/assets\/images\/city\.gif\'\)\]{
-  background-image: url('public/assets/images/city.gif');
 }
 .from-\[\#087FE0\]{
   --tw-gradient-from: #087FE0 var(--tw-gradient-from-position);
@@ -2577,6 +2549,11 @@ video {
     line-height: 1;
   }
 
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:ring-1{
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2600,10 +2577,6 @@ video {
 
   .md\:h-\[45vh\]{
     height: 45vh;
-  }
-
-  .md\:h-\[50vh\]{
-    height: 50vh;
   }
 
   .md\:h-\[60vh\]{
@@ -2753,6 +2726,14 @@ video {
     margin-top: -3rem;
   }
 
+  .lg\:mt-\[5rem\]{
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-\[-5rem\]{
+    margin-top: -5rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -2771,6 +2752,10 @@ video {
 
   .lg\:h-\[70vh\]{
     height: 70vh;
+  }
+
+  .lg\:h-\[80vh\]{
+    height: 80vh;
   }
 
   .lg\:w-10{
@@ -2870,6 +2855,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:pb-40{
     padding-bottom: 10rem;
   }
@@ -2954,6 +2944,22 @@ video {
     margin-top: 0px;
   }
 
+  .xl\:mt-\[-10\]{
+    margin-top: -10;
+  }
+
+  .xl\:mt-\[-30\]{
+    margin-top: -30;
+  }
+
+  .xl\:mt-\[-10rem\]{
+    margin-top: -10rem;
+  }
+
+  .xl\:mt-\[-8rem\]{
+    margin-top: -8rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -3003,9 +3009,44 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1536px){
+
+  .\32xl\:mt-\[-3rem\]{
+    margin-top: -3rem;
+  }
+
+  .\32xl\:mt-\[-5rem\]{
+    margin-top: -5rem;
+  }
+
+  .\32xl\:mt-\[-1rem\]{
+    margin-top: -1rem;
+  }
+
+  .\32xl\:mt-\[0rem\]{
+    margin-top: 0rem;
+  }
+
+  .\32xl\:mt-\[2rem\]{
+    margin-top: 2rem;
+  }
 
   .\32xl\:h-\[90vh\]{
     height: 90vh;
@@ -3033,5 +3074,15 @@ video {
   .\32xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
