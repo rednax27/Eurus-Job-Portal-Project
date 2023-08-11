@@ -1,40 +1,39 @@
 <div
-  class="flex border border-black p-4 gap-6 text-xs job-card md:w-[100%]"
+  class="flex border-2 border-gray-500 py-6 px-4 text-xs rounded-xl job-card md:w-[100%] mb-4 font-montserrat shadow-sm bg-[#fffbea]"
   onclick="toggleDetails(this)"
 >
   <div class="w-[20%] flex items-start md:w-[15%]">
     <img
       src="<%= companyLogo %>"
       alt=""
-      class="border border-gray-500 p-2 object-fill"
+      class="border-2 border-gray-500 object-fill bg-white"
     />
   </div>
-  <div class="flex flex-col gap-1 w-[80%] md:w-[90%]">
-    <p class=""><%= jobListing %></p>
-    <p class=""><%= employerName %></p>
-    <div class="flex gap-2 flex-wrap">
-      <p class="text-[10px]"><%= jobCategory %></p>
-      <div class="flex gap-1">
-        <p class="text-[10px]"><%= jobSalary %></p>
-        <p class="">.</p>
-        <p class="text-[10px]"><%= jobType %></p>
+  <div class="flex flex-col gap-3 w-[80%] md:w-[90%] ml-6">
+    <p class="font-bold font-open text-lg text-[#13B0A7]"><%= jobListing %></p>
+    <p class="text-[15px] text-gray-500"><%= employerName %></p>
+    <div class="flex gap-4 flex-wrap">
+      <p class="text-[12px]"><%= jobCategory %></p>
+      <div class="flex gap-4">
+        <p class="text-[12px]"><%= jobSalary %></p>
+
+        <p class="text-[12px]"><%= jobType %></p>
       </div>
     </div>
-    <p class=""><%= jobLocation %></p>
+    <p class="text-[12px]"><%= jobLocation %></p>
     <div class="job-details hidden">
       <!-- Additional details content -->
-      <strong>Description:</strong>
-      <p><%= jobDescription %></p>
-      <p>
-        <strong>Requirements:</strong> Ut consectetur risus in fringilla
-        maximus. Fusce non tincidunt eros, in pellentesque odio.
+      <strong class="mb-2">Description:</strong>
+      <p class="mb-4"><br /><%= jobDescription %></p>
+      <p class="mb-4">
+        <strong>Requirements:</strong><br /><br />
+        <%= jobRequirements %>
       </p>
-      <p>
-        <strong>Benefits:</strong> Aliquam nec augue quis arcu vulputate
-        interdum non vel ex. Vivamus ut maximus neque. Donec tincidunt magna sit
-        amet orci placerat, non luctus mauris semper.
+      <p class="mb-6">
+        <strong>Benefits:</strong><br /><br />
+        <%= jobBenefits %>
       </p>
-      <div class="flex gap-4 h-[25%] mt-2">
+      <div class="container flex gap-8">
         <%- include('./Button.ejs', {buttonText: "Apply Now", buttonVariant:
         "primary"}); %> <%- include('./Button.ejs', {buttonText: "Click me",
         buttonVariant: "primary"}); %>
