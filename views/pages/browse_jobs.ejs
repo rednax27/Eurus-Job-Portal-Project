@@ -676,13 +676,13 @@
       class="w-full md:w-1/4 flex flex-col gap-8 px-8 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#fffbea] md:ml-4"
       id="this-container"
     >
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 px-6 border border-black">
         <h3 class="">Find Jobs</h3>
-        <a href="" class="">Browse All</a>
-        <a href="" class="">Browse with my Skills</a>
-        <a href="" class="">Browse with top</a>
-        <a href="" class="">Browse Local Jobs</a>
-        <a href="" class="">Browse Categories</a>
+        <a href="" class="hover:pl-3">Browse All</a>
+        <a href="" class="hover:pl-1">Browse with my Skills</a>
+        <a href="" class="hover:pl-3">Browse with top</a>
+        <a href="" class="hover:pl-3">Browse Local Jobs</a>
+        <a href="" class="hover:pl-3">Browse Categories</a>
       </div>
       <div
         class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm"
@@ -690,20 +690,22 @@
         <p class="text-center font-bold">Featured Members</p>
         <div class="flex flex-col gap-4">
           <div class="job-card">
-            <%- include('../components/atom/Featured-Member-Card', {companyLogo:
+            <%- include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
             "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            companyName: `John Smithasdasdasf`, companyLogo:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg" });
-            %> <%- include('../components/atom/Featured-Member-Card',
-            {companyLogo:
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
             "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            companyName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Featured-Member-Card', {companyLogo:
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
             "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            companyName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Featured-Member-Card', {companyLogo:
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
             "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            companyName: `John Smithasdasdasf` }); %>
+            featuredMemberName: `John Smithasdasdasf` }); %>
           </div>
         </div>
       </div>

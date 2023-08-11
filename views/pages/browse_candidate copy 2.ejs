@@ -1,5 +1,6 @@
 <% title = "Browse Jobs" %> <%- include('../partials/shared/header'); %>
 
+<!-- hero container -->
 <section
   class="bg-gradient-to-r from-[#087FE0] from-10% via-[#0685cc] via-30% to-[#05e6ba] to-90% h-[90vh]"
 >
@@ -32,7 +33,7 @@
       >
         <img
           class="w-80 h-80 rounded-full border-4 border-white custom-shadow"
-          src="assets/images/Vector-White.svg"
+          src="assets/images/icons/Engineer-professions-jobs-worker-man.svg"
           alt=""
         />
 
@@ -45,7 +46,7 @@
           >
             <img
               class="h-9 w-9 object-center animate-rotate-img anim-8s"
-              src="assets/images/icons/Engineer-professions-jobs-worker-man.svg"
+              src="assets/images/southwest-airlines.svg"
               alt=""
             />
           </div>
@@ -53,8 +54,8 @@
             class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 transform translate-x-5"
           >
             <img
-              class="h-10 w-10 object-center animate-rotate-img anim-8s"
-              src="assets/images/icons/Cashier-sales assistant-supermarket-woman-professions.svg"
+              class="h-10 w-10 object-fill animate-rotate-img anim-8s"
+              src="assets/images/microsoft.svg"
               alt=""
             />
           </div>
@@ -70,7 +71,7 @@
             >
               <img
                 class="h-full w-full object-center animate-rotate-img"
-                src="assets/images/icons/Chef-professions-jobs-avatar-cooker.svg"
+                src="assets/images/google.svg"
                 alt=""
               />
             </div>
@@ -79,7 +80,7 @@
             >
               <img
                 class="h-full w-full object-center animate-rotate-img"
-                src="assets/images/icons/Farmer-man-farming-gardening-jobs.svg"
+                src="assets/images/hsbc.svg"
                 alt=""
               />
             </div>
@@ -91,7 +92,7 @@
             >
               <img
                 class="h-full w-full object-center animate-rotate-img"
-                src="assets/images/icons/Maid-woman-profession-jobs-avatar.svg"
+                src="assets/images/umbrella.svg"
                 alt=""
               />
             </div>
@@ -100,7 +101,7 @@
             >
               <img
                 class="h-full w-full object-center animate-rotate-img"
-                src="assets/images/icons/Mechanic-repair-professions-jobs-man.svg"
+                src="assets/images/shopee.png"
                 alt=""
               />
             </div>
@@ -119,45 +120,6 @@
   class="flex flex-wrap md:flex-nowrap font-montserrat w-full z-10 border border-black bg-[#faebd2] p-2"
 >
   <div class="w-full p-0 flex flex-col md:flex-row justify-between">
-    <div
-      class="w-full md:w-1/4 flex flex-col gap-8 px-3 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#faebd2] md:ml-4 order-2"
-    >
-      <div
-        class="flex flex-col gap-4 py-4 px-12 border-2 border-black rounded-2xl bg-[#fffbea]"
-      >
-        <h3 class="">Find Jobs</h3>
-        <a href="" class="hover:pl-3">Browse All</a>
-        <a href="" class="hover:pl-3">Browse with my Skills</a>
-        <a href="" class="hover:pl-3">Browse with top</a>
-        <a href="" class="hover:pl-3">Browse Local Jobs</a>
-        <a href="" class="hover:pl-3">Browse Categories</a>
-      </div>
-      <div
-        class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm rounded-2xl"
-      >
-        <p class="text-center font-bold">Featured Members</p>
-        <div class="flex flex-col gap-4">
-          <div class="job-card">
-            <%- include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="w-full md:w-3/4">
       <div
         class="flex flex-col gap-2 p-6 border-2 border-black rounded-2xl bg-[#fffbea]"
@@ -173,7 +135,6 @@
           <a href="" class="flex">Keywords</a>
         </div>
       </div>
-
       <!-- job list -->
       <div class="p-4 overflow-hidden">
         <div id="jobCards" class="swiper-container">
@@ -201,9 +162,8 @@
                 company, with zero marketing spends. Plash Digital Labs is now
                 home to newly re-branded entities like our creative content site
                 called Limitless, our mobile technology division called Trunext,
-                and our news aggregation app called Daily Cup.`,
-                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
-                include('../components/atom/Candidate-Card', {candidatePhoto:
+                and our news aggregation app called Daily Cup.`, candidateRequirements: `asdjbasdbaksbd` }); %>                 <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
                 "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
                 candidateName: `John Smithasdasdasf`, candidateLocation: `The
                 Middle of Nowhere`, candidateWork: `Worked at DELL`,
@@ -223,9 +183,8 @@
                 company, with zero marketing spends. Plash Digital Labs is now
                 home to newly re-branded entities like our creative content site
                 called Limitless, our mobile technology division called Trunext,
-                and our news aggregation app called Daily Cup.`,
-                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
-                include('../components/atom/Candidate-Card', {candidatePhoto:
+                and our news aggregation app called Daily Cup.`, candidateRequirements: `asdjbasdbaksbd` }); %>                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
                 "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
                 candidateName: `John Smithasdasdasf`, candidateLocation: `The
                 Middle of Nowhere`, candidateWork: `Worked at DELL`,
@@ -245,9 +204,8 @@
                 company, with zero marketing spends. Plash Digital Labs is now
                 home to newly re-branded entities like our creative content site
                 called Limitless, our mobile technology division called Trunext,
-                and our news aggregation app called Daily Cup.`,
-                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
-                include('../components/atom/Candidate-Card', {candidatePhoto:
+                and our news aggregation app called Daily Cup.`, candidateRequirements: `asdjbasdbaksbd` }); %>                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
                 "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
                 candidateName: `John Smithasdasdasf`, candidateLocation: `The
                 Middle of Nowhere`, candidateWork: `Worked at DELL`,
@@ -267,18 +225,61 @@
                 company, with zero marketing spends. Plash Digital Labs is now
                 home to newly re-branded entities like our creative content site
                 called Limitless, our mobile technology division called Trunext,
-                and our news aggregation app called Daily Cup.`,
-                candidateRequirements: `asdjbasdbaksbd` }); %>
+                and our news aggregation app called Daily Cup.`, candidateRequirements: `asdjbasdbaksbd` }); %>
               </div>
             </div>
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <%- include('../partials/shared/footer'); %>
+    <div
+      class="w-full md:w-1/4 flex flex-col gap-8 px-8 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#fffbea] md:ml-4"
+ 
+    >
+      <div class="flex flex-col gap-4 px-6 border border-black">
+        <h3 class="">Find Jobs</h3>
+        <a href="" class="hover:pl-3">Browse All</a>
+        <a href="" class="hover:pl-1">Browse with my Skills</a>
+        <a href="" class="hover:pl-3">Browse with top</a>
+        <a href="" class="hover:pl-3">Browse Local Jobs</a>
+        <a href="" class="hover:pl-3">Browse Categories</a>
+      </div>
+      <div
+        class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm"
+      >
+        <p class="text-center font-bold">Featured Members</p>
+        <div class="flex flex-col gap-4">
+          <div class="job-card">
+            <%- include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<%- include('../partials/shared/footer'); %>
+
   <script>
     // Initialize Swiper
     const swiper = new Swiper('#jobCards', {
@@ -291,3 +292,4 @@
     });
   </script>
 </div>
+
