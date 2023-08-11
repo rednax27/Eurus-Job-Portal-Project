@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./views/**/*.ejs'],
+  content: [
+    './views/**/*.ejs',
+    './src/**/*.{html,js}',
+    './node_modules/tw-elements/dist/js/**/*.js',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -10,6 +14,24 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         markazi: ['Markazi', 'sans-serif'],
         oswald: ['Oswald', 'sans-serif'],
+        open: ['Open Sans', 'sans-serif'],
+      },
+      keyframes: {
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'rotate-img': {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(-90deg)' },
+          '50%': { transform: 'rotate(-180deg)' },
+          '75%': { transform: 'rotate(-270deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
+      },
+      animation: {
+        'spin-slow': 'spin-slow 13s linear infinite',
+        'rotate-img': 'rotate-img 13s linear infinite',
       },
       colors: {
         'mountain-meadow': {
@@ -29,5 +51,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tw-elements/dist/plugin.cjs')],
+  darkMode: 'class',
 };
