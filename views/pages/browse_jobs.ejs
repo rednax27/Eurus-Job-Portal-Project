@@ -18,11 +18,12 @@
         Where the world meets startups, Millions of small businesses use
         Freelancers to turn their ideas into a reality</span
       >
-      <a
-        href="#"
-        class="font-open text-white text-lg font-semibold border broder-white rounded-full px-12 py-4 mt-10 w-max hover:bg-white hover:text-[#087fe0] transition duration-500 ease-in-out"
-        >Get started for free</a
-      >
+      <div class="w-[70%] ml-[-5rem]">
+        <%- include('../components/atom/Find-Jobs'); %>
+        <div class="w-full text-white ml-[-4rem]">
+          <%- include('../components/atom/Join-Today'); %>
+        </div>
+      </div>
     </div>
     <section
       class="w-full h-screen flex-col-reverse md:flex-row justify-center items-center overflow-hidden hidden md:flex"
@@ -116,22 +117,22 @@
 </section>
 
 <div
-  class="flex flex-wrap md:flex-nowrap font-montserrat w-full z-10 border border-black bg-[#faebd2] p-2"
+  class="flex flex-wrap md:flex-nowrap font-montserrat w-full z-10 bg-white p-2 mt-16 px-20"
 >
   <div class="w-full p-0 flex flex-col md:flex-row justify-between">
     <div class="w-full md:w-3/4">
-      <div
-        class="flex flex-col gap-2 p-6 border-2 border-black rounded-2xl bg-[#fffbea]"
-      >
-        <p class="text-lg">Filter by:</p>
+      <div class="flex flex-col gap-2 p-6 border-2 rounded-2xl bg-white">
+        <span class="font-light font-open text-xl">Filter by:</span>
         <div class="flex flex-wrap gap-8">
-          <a href="" class="flex">Skills</a>
-          <a href="" class="flex">Job Type</a>
-          <a href="" class="flex">Skills</a>
-          <a href="" class="flex">Location</a>
-          <a href="" class="flex">Compensation</a>
-          <a href="" class="flex">Company</a>
-          <a href="" class="flex">Keywords</a>
+          <a href="" class="flex font-open font-sm text-[#636363]">Skills</a>
+          <a href="" class="flex font-open font-sm text-[#636363]">Job Type</a>
+          <a href="" class="flex font-open font-sm text-[#636363]">Skills</a>
+          <a href="" class="flex font-open font-sm text-[#636363]">Location</a>
+          <a href="" class="flex font-open font-sm text-[#636363]"
+            >Compensation</a
+          >
+          <a href="" class="flex font-open font-sm text-[#636363]">Company</a>
+          <a href="" class="flex font-open font-sm text-[#636363]">Keywords</a>
         </div>
       </div>
       <!-- job list -->
@@ -676,13 +677,23 @@
       class="w-full md:w-1/4 flex flex-col gap-8 px-8 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#fffbea] md:ml-4"
       id="this-container"
     >
-      <div class="flex flex-col gap-4 px-6 border border-black">
-        <h3 class="">Find Jobs</h3>
-        <a href="" class="hover:pl-3">Browse All</a>
-        <a href="" class="hover:pl-1">Browse with my Skills</a>
-        <a href="" class="hover:pl-3">Browse with top</a>
-        <a href="" class="hover:pl-3">Browse Local Jobs</a>
-        <a href="" class="hover:pl-3">Browse Categories</a>
+      <div class="flex flex-col gap-4">
+        <h3 class="font-open font-semibold text-black text-base">Find Jobs</h3>
+        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+          >Browse All</a
+        >
+        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+          >Browse with my Skills</a
+        >
+        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+          >Browse with top</a
+        >
+        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+          >Browse Local Jobs</a
+        >
+        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+          >Browse Categories</a
+        >
       </div>
       <div
         class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm"
@@ -690,22 +701,15 @@
         <p class="text-center font-bold">Featured Members</p>
         <div class="flex flex-col gap-4">
           <div class="job-card">
-            <%- include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %> <%-
-            include('../components/atom/Animated-Featured-Member-Card',
-            {featuredMemberPhoto:
-            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-            featuredMemberName: `John Smithasdasdasf` }); %>
+            <%- include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/woman 1.jpeg", companyName: `Sasha Grey`,
+            companyLogo: "assets/images/woman 1.jpeg" }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/man 1.jpg", companyName: `Lawrence Cruz` }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/woman 2.jpg", companyName: `Katie Santos` }); %> <%-
+            include('../components/atom/Featured-Member-Card', {companyLogo:
+            "assets/images/man 2.jpg", companyName: `Juan Perez` }); %>
           </div>
         </div>
       </div>
@@ -715,11 +719,11 @@
 <%- include('../partials/shared/footer'); %>
 <script>
   // Initialize Swiper
-  const swiper = new Swiper('#jobCards', {
+  const swiper = new Swiper("#jobCards", {
     slidesPerView: 1,
     spaceBetween: 560,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
   });
