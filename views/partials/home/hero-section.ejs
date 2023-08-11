@@ -1,29 +1,34 @@
-<%- include('../../partials/shared/header.ejs'); %>
 <section
-  class="bg-gradient-to-r from-[#087FE0] from-10% via-[#0685cc] via-30% to-[#05e6ba] to-90% h-[90vh]"
+  class="bg-gradient-to-r from-[#087FE0] from-10% via-[#0685cc] via-30% to-[#05e6ba] to-90% 2xl:h-[90vh] xl:h-[80vh] lg:h-[70vh] sm:h-[60vh]"
 >
   <div class="flex w-full h-full">
     <div class="w-1/2 flex flex-col flex-wrap content-center justify-center">
       <h1
-        class="w-1/2 font-montserrat text-white font-bold 2xl:text-8xl xl:text-6xl lg:text-4xl"
+
+        class="w-1/2 font-['Montserrat'] text-white font-bold 2xl:text-8xl xl:text-6xl text-4xl"
+
       >
         Eurus Freelancers
       </h1>
       <span
-        class="w-1/2 font-open text-white 2xl:text-xl lg:text- font-light mt-8"
+
+        class="w-1/2 font-['Open Sans'] text-white 2xl:text-xl lg:text-lg md:text-base font-light mt-8"
+
         >Building bridges to success, Eurus bridges the gap between job seekers
         and blue collar employers.</span
       >
       <a
         href="#"
-        class="font-open text-white text-lg font-semibold border broder-white rounded-full px-12 py-4 mt-10 w-max hover:bg-white hover:text-[#087fe0] transition duration-500 ease-in-out"
+
+        class="font-['Open Sans'] text-white lg:text-lg md:text-base text-xs font-semibold border broder-white rounded-full lg:px-12 lg:py-4 px-6 py-2 mt-10 w-max hover:bg-white hover:text-[#087fe0] transition duration-500 ease-in-out"
+
         >Get started for free</a
       >
     </div>
     <div class="w-1/2 flex flex-wrap justify-center content-center">
       <div class="flex flex-wrap justify-center content-center">
         <img
-          class="h-[700px] w-auto drop-shadow-[35.5px_64.95px_39.5px_rgba(0,0,0,0.5)]"
+          class="2xl:w-[36rem] xl:w-[32rem] lg:w-[28rem] w-[20rem] h-auto drop-shadow-[35.5px_64.95px_39.5px_rgba(0,0,0,0.5)]"
           src="assets/images/professions.gif"
           width="930"
           height="1020"
@@ -32,5 +37,3 @@
     </div>
   </div>
 </section>
-
-<%- include('../../partials/shared/footer.ejs'); %>
