@@ -1,20 +1,20 @@
 <div
-  class="flex border-2 border-black p-4 gap-6 text-xs job-card md:w-[100%] mb-2 bg-[#fffbea]"
+  class="flex flex-col md:flex-row border-2 items-center border-black p-4 gap-6 text-xs job-card md:w-[60%] mb-2 bg-[#fffbea]"
 >
-  <div class="w-[20%] flex items-start md:w-[15%]">
+  <div class="w-[20%] flex items-start md:w-[15%] mr-4 md:mr-0">
     <img
       src="<%= candidateProfile %>"
       alt=""
       class="border border-gray-400 p-1 object-fill rounded-full bg-white"
     />
   </div>
-  <div class="flex flex-col gap-4 w-[80%] md:w-[90%]">
-    <p class="text-lg font-semibold"><%= jobDone %></p>
+  <div class="flex flex-col items-start gap-4 w-[100%] ml-24 md:ml-0">
+    <p class="text-lg font-semibold w-[70%]"><%= jobDone %></p>
     <div class="flex gap-4">
       <p class="font-bold"><%= jobCategory %></p>
       <p class=""><%= jobPayment %> <strong>USD</strong></p>
     </div>
-    <p class=""><%= clientFeedback %></p>
+    <p class="w-[70%]"><%= clientFeedback %></p>
     <div class="flex gap-4">
       <p class="">By <strong><%= clientName %></strong></p>
       <p class=""><%= feedbackDate %></p>

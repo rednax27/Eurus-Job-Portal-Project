@@ -1168,6 +1168,12 @@ input[type="range"]:active::-webkit-slider-thumb{
 .mt-\[0\.15rem\]{
   margin-top: 0.15rem;
 }
+.ml-24{
+  margin-left: 6rem;
+}
+.ml-0{
+  margin-left: 0px;
+}
 .box-border{
   box-sizing: border-box;
 }
@@ -1419,6 +1425,12 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .h-screen{
   height: 100vh;
+}
+.h-\[30rem\]{
+  height: 30rem;
+}
+.h-\[35rem\]{
+  height: 35rem;
 }
 .max-h-12{
   max-height: 3rem;
@@ -1688,6 +1700,21 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .w-screen{
   width: 100vw;
+}
+.w-\[40rem\]{
+  width: 40rem;
+}
+.w-\[25rem\]{
+  width: 25rem;
+}
+.w-\[35rem\]{
+  width: 35rem;
+}
+.w-60{
+  width: 15rem;
+}
+.w-\[full\]{
+  width: full;
 }
 .min-w-0{
   min-width: 0px;
@@ -2103,6 +2130,9 @@ input[type="range"]:active::-webkit-slider-thumb{
 .content-start{
   align-content: flex-start;
 }
+.content-stretch{
+  align-content: stretch;
+}
 .items-start{
   align-items: flex-start;
 }
@@ -2505,6 +2535,10 @@ input[type="range"]:active::-webkit-slider-thumb{
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-red-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 .border-t-transparent{
   border-top-color: transparent;
@@ -5694,6 +5728,10 @@ code {
     margin-left: 1rem;
   }
 
+  .md\:mr-0{
+    margin-right: 0px;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -5778,6 +5816,39 @@ code {
     width: 90%;
   }
 
+  .md\:w-\[175\%\]{
+    width: 175%;
+  }
+
+  .md\:w-\[75\%\]{
+    width: 75%;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .md\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .md\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .md\:w-\[25\%\]{
+    width: 25%;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
+  .md\:w-\[60\%\]{
+    width: 60%;
+  }
+
   .md\:-translate-y-20{
     --tw-translate-y: -5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5816,6 +5887,10 @@ code {
 
   .md\:justify-normal{
     justify-content: normal;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:justify-around{
