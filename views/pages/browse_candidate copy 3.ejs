@@ -1,0 +1,315 @@
+<% title = "Browse Jobs" %> <%- include('../partials/shared/header'); %>
+
+<section
+  class="bg-gradient-to-r from-[#087FE0] from-10% via-[#0685cc] via-30% to-[#05e6ba] to-90% h-[90vh]"
+>
+  <div class="flex w-full h-full">
+    <div
+      class="w-full flex flex-col flex-wrap content-center justify-center items-center md:items-start"
+    >
+      <h1
+        class="w-full md:w-1/2 font-montserrat text-white text-center md:text-left font-bold md:text-5xl 2xl:text-7xl xl:text-6xl lg:text-6xl"
+      >
+        Browse Jobs on Eurus
+      </h1>
+      <span
+        class="w-1/2 font-open text-white 2xl:text-xl lg:text- font-light mt-8"
+      >
+        Where the world meets startups, Millions of small businesses use
+        Freelancers to turn their ideas into a reality</span
+      >
+      <a
+        href="#"
+        class="font-open text-white text-lg font-semibold border broder-white rounded-full px-12 py-4 mt-10 w-max hover:bg-white hover:text-[#087fe0] transition duration-500 ease-in-out"
+        >Get started for free</a
+      >
+    </div>
+    <section
+      class="w-full h-screen flex-col-reverse md:flex-row justify-center items-center overflow-hidden hidden md:flex"
+    >
+      <div
+        class="w-full md:w-1/2 flex justify-center items-center transform scale-75 md:scale-125 translate-x-20 md:translate-x-40 translate-y-0 md:-translate-y-20"
+      >
+        <img
+          class="w-80 h-80 rounded-full border-4 border-white custom-shadow"
+          src="assets/images/Vector-White.svg"
+          alt=""
+        />
+
+        <!-- Inner -->
+        <div
+          class="hw-inner flex justify-between items-center absolute border border-gray-800 rounded-full animate-spin-slow anim-8s"
+        >
+          <div
+            class="bg-white p-1 rounded-full custom-shadow h-10 w-10 transform -translate-x-5"
+          >
+            <img
+              class="h-9 w-9 object-center animate-rotate-img anim-8s"
+              src="assets/images/icons/Engineer-professions-jobs-worker-man.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 transform translate-x-5"
+          >
+            <img
+              class="h-10 w-10 object-center animate-rotate-img anim-8s"
+              src="assets/images/icons/Cashier-sales assistant-supermarket-woman-professions.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Outer -->
+        <div
+          class="hw-outer flex justify-between items-center absolute border border-gray-800 rounded-full animate-spin-slow"
+        >
+          <div class="flex justify-between items-center h-full w-full">
+            <div
+              class="bg-white p-1 rounded-full custom-shadow h-10 w-10 transform translate-x-8 translate-y-40"
+            >
+              <img
+                class="h-full w-full object-center animate-rotate-img"
+                src="assets/images/icons/Chef-professions-jobs-avatar-cooker.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white overflow-hidden p-1 rounded-full custom-shadow h-10 w-10 transform -translate-x-8 -translate-y-40"
+            >
+              <img
+                class="h-full w-full object-center animate-rotate-img"
+                src="assets/images/icons/Farmer-man-farming-gardening-jobs.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="absolute flex justify-between items-center h-full w-full">
+            <div
+              class="bg-white p-1 rounded-full custom-shadow h-10 w-10 transform translate-x-8 -translate-y-40"
+            >
+              <img
+                class="h-full w-full object-center animate-rotate-img"
+                src="assets/images/icons/Maid-woman-profession-jobs-avatar.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white overflow-hidden p-1 rounded-full custom-shadow h-10 w-10 transform -translate-x-8 translate-y-40"
+            >
+              <img
+                class="h-full w-full object-center animate-rotate-img"
+                src="assets/images/icons/Mechanic-repair-professions-jobs-man.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        hljs.highlightAll();
+      </script>
+    </section>
+  </div>
+</section>
+
+<div
+  class="flex flex-wrap md:flex-nowrap font-montserrat w-full z-10 border border-black bg-[#faebd2] p-2"
+>
+  <div class="w-full p-0 flex flex-col md:flex-row justify-between">
+    <div
+      class="w-full md:w-1/4 flex flex-col gap-8 px-3 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#faebd2] md:ml-4 order-2"
+    >
+      <div
+        class="flex flex-col gap-4 py-4 px-12 border-2 border-black rounded-2xl bg-[#fffbea]"
+      >
+        <h3 class="">Find Jobs</h3>
+        <a href="" class="hover:pl-3">Browse All</a>
+        <a href="" class="hover:pl-3">Browse with my Skills</a>
+        <a href="" class="hover:pl-3">Browse with top</a>
+        <a href="" class="hover:pl-3">Browse Local Jobs</a>
+        <a href="" class="hover:pl-3">Browse Categories</a>
+      </div>
+      <div
+        class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm rounded-2xl"
+      >
+        <p class="text-center font-bold">Featured Members</p>
+        <div class="flex flex-col gap-4">
+          <div class="job-card">
+            <%- include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %> <%-
+            include('../components/atom/Animated-Featured-Member-Card',
+            {featuredMemberPhoto:
+            "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+            featuredMemberName: `John Smithasdasdasf` }); %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-3/4">
+      <div
+        class="flex flex-col gap-2 p-6 border-2 border-black rounded-2xl bg-[#fffbea]"
+      >
+        <p class="text-lg">Filter by:</p>
+        <div class="flex flex-wrap gap-8">
+          <a href="" class="flex">Skills</a>
+          <a href="" class="flex">Job Type</a>
+          <a href="" class="flex">Skills</a>
+          <a href="" class="flex">Location</a>
+          <a href="" class="flex">Compensation</a>
+          <a href="" class="flex">Company</a>
+          <a href="" class="flex">Keywords</a>
+        </div>
+      </div>
+
+      <!-- job list -->
+      <div class="p-4 overflow-hidden">
+        <div id="jobCards" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="job-card">
+                <%- include('../components/atom/Candidate-Card',
+                {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.`,
+                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.`,
+                candidateRequirements: `asdjbasdbaksbd` }); %><%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.`,
+                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.`,
+                candidateRequirements: `asdjbasdbaksbd` }); %> <%-
+                include('../components/atom/Candidate-Card', {candidatePhoto:
+                "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+                candidateName: `John Smithasdasdasf`, candidateLocation: `The
+                Middle of Nowhere`, candidateWork: `Worked at DELL`,
+                candidateSpecialization: `Product Design (Web, Mobile App)`,
+                candidateExperience: `8 Years of Experience`, candidateHours:
+                `48 Number of Hours per Week`, candidateIntroduction: `MIT
+                Graduate with extensive experience in finance and techonology.
+                Passionate about exciting consumer electronics and internet
+                startups around the globe`, candidateDescription: `Rapidly
+                moving ahead, we leveraged our technology to enable other
+                publishers to distribute their content digitally, with our
+                mobile app as a service platform, TruNext for iOS, Android, and
+                Windows. We then started a life, leadership and cultural
+                destination website, with carefully curated and original
+                content. An overnight hit, it attracted 6 million hits in less
+                than 1.5 months. All done faster than any other major internet
+                company, with zero marketing spends. Plash Digital Labs is now
+                home to newly re-branded entities like our creative content site
+                called Limitless, our mobile technology division called Trunext,
+                and our news aggregation app called Daily Cup.`,
+                candidateRequirements: `asdjbasdbaksbd` }); %>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../partials/shared/footer'); %>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('#jobCards', {
+      slidesPerView: 1,
+      spaceBetween: 560,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</div>

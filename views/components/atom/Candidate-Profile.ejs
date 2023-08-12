@@ -1,10 +1,14 @@
-<div class="flex flex-col gap-4 container py-4 px-8">
-  <div class="flex flex-col p-4 gap-4 border border-black">
-    <p class="">FIELD OF WORD</p>
+<div class="flex flex-col gap-4 py-4 px-8 items-center">
+  <div
+    class="flex flex-col p-4 gap-4 border-2 border-black w-full md:w-[85%] rounded-3xl bg-[#fffbea]"
+  >
+    <p class="font-bold">FIELDS OF WORK</p>
     <p class="mt-2"><%= candidateSelfDescription %></p>
   </div>
-  <div class="flex flex-col p-4 gap-4 border border-black">
-    <p class="">Skills</p>
+  <div
+    class="flex flex-col p-4 gap-4 border-2 border-black w-full md:w-[85%] items-center rounded-3xl bg-white"
+  >
+    <p class="font-bold">SKILLS</p>
     <div class="mt-2">
       <div class="flex gap-4 flex-wrap">
         <button class="rounded-3xl bg-gray-400 px-2">
@@ -21,8 +25,10 @@
         </button>
       </div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
-      <p class="">Experience</p>
+    <div
+      class="flex flex-col p-4 gap-4 border-2 border-black w-full md:w-[85%] rounded-3xl bg-[#fffbea]"
+    >
+      <p class="font-bold">EXPERIENCE</p>
       <div class="">
         <p class=""><%= candidateProfession %></p>
         <div class="flex gap-4">
@@ -32,25 +38,29 @@
         <p class="mt-2"><%= candidateProfessionDescription %></p>
       </div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
+    <div
+      class="flex flex-col p-4 gap-4 border-2 border-black w-full md:w-[85%] rounded-3xl bg-[#fffbea]"
+    >
       <div class="flex flex-col gap-4">
-        <p class="">Education</p>
+        <p class="font-bold text-lg">EDUCATION</p>
         <div class="flex flex-col p-4 gap-4">
-          <p class=""><%= candidateSchool %></p>
-          <p class=""><%= candidateEducation %></p>
-          <p class=""><%= candidateEducationPeriod %></p>
-          <p class=""><%= candidateDegree %></p>
+          <p class="font-semibold"><%= candidateSchool %></p>
+          <p class="font-semibold"><%= candidateEducation %></p>
+          <p class="font-semibold"><%= candidateEducationPeriod %></p>
+          <p class="font-semibold"><%= candidateDegree %></p>
         </div>
       </div>
       <div class="flex flex-col p-4 gap-4"></div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
+    <div
+      class="flex flex-col p-4 gap-4 border-2 border-black w-full md:w-[85%] rounded-3xl bg-[#fffbea]"
+    >
       <div class="flex flex-col gap-4">
-        <p class="">Award</p>
+        <p class="font-bold">AWARDS</p>
         <div class="flex flex-col p-4 gap-4">
-          <p class=""><%= candidateAward %></p>
-          <p class=""><%= candidateAwarder %></p>
-          <p class=""><%= candidateAwardYear %></p>
+          <p class="font-semibold"><%= candidateAward %></p>
+          <p class="font-semibold"><%= candidateAwarder %></p>
+          <p class="font-semibold"><%= candidateAwardYear %></p>
         </div>
       </div>
     </div>

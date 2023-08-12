@@ -1,70 +1,76 @@
-<div class="flex flex-col gap-4 w-full items-center p-8">
-  <div class="flex flex-col gap-4 border border-black text-sm w-full">
-    <p class="text-center"><%= candidateName %></p>
-    <div class="flex flex-col gap-4 items-center">
+<div class="flex flex-col gap-4 w-full items-center p-8 font-montserrat">
+  <div
+    class="flex flex-col gap-4 border-2 border-black text-sm w-full py-4 container bg-[#fffbea] rounded-3xl"
+  >
+    <p
+      class="text-center mr-20 font-montserrat -semibold text-4xl container pb-2"
+    >
+      <%= candidateName %>
+    </p>
+    <div
+      class="flex flex-col gap-4 justify-center items-center border-y-2 border-black py-2 mr-24 text-lg font-montserrat container bg-white"
+    >
       <p class=""><%= candidateSpecialization %></p>
       <p class=""><%= candidateExperience %> Years of Experience</p>
       <p class=""><%= candidateHours %> Number of hours per week</p>
     </div>
     <div class="flex gap-4 w-full justify-center flex-wrap">
-      <div
-        class="flex h-[40px] container border border-black justify-center w-full md:w-[30vw]"
-      >
+      <div class="flex h-[45px] container justify-center md:w-[30vw]">
         <img
           src="<%= connectionName %>"
           alt=""
-          class="relative z-2 border border-black rounded-full bg-blue-400"
+          class="relative z-3 border-2 border-black rounded-full right-2 bg-white"
         />
         <img
           src="<%= connectionName2 %>"
           alt=""
-          class="relative z-3 border border-black rounded-full right-4 bg-blue-400"
+          class="relative z-3 border-2 border-black rounded-full right-4 bg-white"
         />
         <img
           src="<%= connectionName3 %>"
           alt=""
-          class="relative z-4 border border-black rounded-full right-6 bg-blue-400"
+          class="relative z-4 border-2 border-black rounded-full right-6 bg-white"
         />
         <img
           src="<%= connectionName4 %>"
           alt=""
-          class="relative z-5 border border-black rounded-full right-8 bg-blue-400"
+          class="relative z-5 border-2 border-black rounded-full right-8 bg-white"
         />
       </div>
       <div
-        class="flex flex-col md:flex-row gap-6 border border-black justify-center md:items-center"
+        class="flex flex-col md:flex-row gap-6 p-3 font-montserrat justify-center md:items-center"
       >
-        <p class=""><%= connectionNumbers %> Connections</p>
-        <p class=""><%= followerCount %> Followers</p>
-        <p class="">Following <%= followingCount %></p>
+        <p class="font-semibold"><%= connectionNumbers %> Connections</p>
+        <p class="font-semibold"><%= followerCount %> Followers</p>
+        <p class="font-semibold"><%= followingCount %> Following</p>
       </div>
     </div>
   </div>
   <div
-    class="flex flex-wrap w-full gap-4 border border-black justify-between p-4"
+    class="flex flex-wrap w-full gap-4 border-2 border-black justify-between p-4 rounded-3xl bg-[#fffbea]"
   >
     <div class="flex flex-col gap-4">
-      <p class="">EMAIL</p>
+      <p class="font-semibold">EMAIL</p>
       <p class=""><%= candidateEmail %></p>
     </div>
     <div class="flex flex-col gap-4">
-      <p class="">PHONE</p>
+      <p class="font-semibold">PHONE</p>
       <p class=""><%= candidateContact %></p>
     </div>
     <div class="flex flex-col gap-4">
-      <p class="">DOB</p>
+      <p class="font-semibold">DOB</p>
       <p class=""><%= candidateBirthdate %></p>
     </div>
     <div class="flex flex-col gap-4">
-      <p class="">GENDER</p>
+      <p class="font-semibold">GENDER</p>
       <p class=""><%= candidateGender %></p>
     </div>
     <div class="flex flex-col gap-4">
-      <p class="">COUNTRY</p>
+      <p class="font-semibold">COUNTRY</p>
       <p class=""><%= candidateCountry %></p>
     </div>
     <div class="flex flex-col gap-4">
-      <p class="">PROVINCE/CITY</p>
+      <p class="font-semibold">PROVINCE/CITY</p>
       <p class=""><%= candidateCity %></p>
     </div>
   </div>

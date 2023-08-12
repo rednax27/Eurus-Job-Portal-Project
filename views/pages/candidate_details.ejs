@@ -1,47 +1,49 @@
 <% title = "Job Details" %> <%- include('../partials/shared/header-2'); %>
 <!-- hero container -->
 <div
-  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-end"
+  class="w-full bg-cat bg-contain h-[40vh] border border-black flex justify-center items-end"
 >
   <%- include('../components/atom/Hero-Photo', {candidatePhoto:
-  "assets/images/icons/Engineer-professions-jobs-worker-man.svg"}); %>
+  "assets/images/icons/Mechanic-repair-professions-jobs-man.svg"}); %>
 </div>
 
-<div class="flex flex-wrap md:flex-nowrap w-full">
+<div class="flex flex-wrap md:flex-nowrap w-full bg-white">
   <div class="w-full p-0 flex flex-col md:flex-row justify-between">
     <div class="w-full">
       <div class="flex flex-col gap-4 p-2">
         <%- include('../components/atom/Profile-Card', { candidateName: `John
         Smith`, candidateSpecialization: `Product Design (web, Mobile App)`,
         candidateExperience: "7", candidateHours: "48", connectionName:
-        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        `assets/images/icons/Engineer-professions-jobs-worker-man.svg`,
         connectionName2:
-        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        `assets/images/icons/Chef-professions-jobs-avatar-cooker.svg`,
         connectionName3:
-        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
+        "assets/images/icons/Maid-woman-profession-jobs-avatar.svg",
         connectionName4:
-        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",connectionNumbers:
+        "assets/images/icons/Farmer-man-farming-gardening-jobs.svg",connectionNumbers:
         `163`, followerCount: `290`, followingCount: "36",candidateEmail:
         `johnsmith@gmail.com`,candidateContact: `0904968368`,
         candidateBirthdate: `16/06/1987`, candidateGender:
         "Male",candidateCountry: `Germany`, candidateCity: `Berlin` }); %>
       </div>
-      <div class="flex justify-around border border-black items-center">
-        <p class="">Portfolio</p>
-        <div class="flex gap-4 items-center border border-black">
+      <div
+        class="flex justify-around border-2 border-black items-center py-4 bg-[#fffbea] rounded-2xl"
+      >
+        <p class="font-semibold text-lg">Portfolio</p>
+        <div class="flex gap-4 items-center">
           <button
-            class="flex items-center border border-black rounded-full px-2"
+            class="flex items-center border-2 border-black rounded-full px-2 bg-white"
           >
             +
           </button>
-          <p class="">Add Portfolio</p>
+          <p class="font-bold">Add Portfolio</p>
         </div>
       </div>
       <div
-        class="flex gap-4 justify-center items-center border border-black p-8 flex-wrap w-full"
+        class="flex gap-4 justify-around items-center p-8 flex-wrap w-full mb-6"
       >
         <div
-          class="flex justify-center items-center border border-black gap-4 p-12"
+          class="flex justify-center items-center border-2 border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -51,7 +53,7 @@
           </div>
         </div>
         <div
-          class="flex justify-center items-center border border-black gap-4 p-12"
+          class="flex justify-center items-center border-2 border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -61,7 +63,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-center items-center border border-black gap-4 p-12"
+          class="flex flex-col justify-center items-center border-2 border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -71,7 +73,7 @@
           </div>
         </div>
         <div
-          class="flex justify-center items-center border border-black gap-4 p-12"
+          class="flex justify-center items-center border-2 border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -81,9 +83,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="flex flex-col gap-4 p-2 border border-black w-full md:w-[70vw]"
-      >
+      <div class="flex flex-col gap-4 p-2 w-full">
         <%- include('../components/atom/Candidate-Profile', {
         candidateSelfDescription: ` Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Assumenda ipsa minus vitae cupiditate aliquam expedita
@@ -104,8 +104,8 @@
         candidateAwardYear: `2015` }); %>
       </div>
       <!-- job list -->
-      <div class="w-full p-8 flex flex-col gap-4">
-        <p class="text-3xl font-bold">Feedback</p>
+      <div class="w-full p-8 flex flex-col items-center gap-4">
+        <p class="text-2xl font-bold">Feedback</p>
         <div class="job-card">
           <%- include('../components/atom/Feedback-Card', {candidateProfile:
           "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
