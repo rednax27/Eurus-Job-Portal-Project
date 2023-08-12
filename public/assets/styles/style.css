@@ -3155,6 +3155,18 @@ input[type="range"]:active::-webkit-slider-thumb{
 .pt-\[6px\]{
   padding-top: 6px;
 }
+.pr-\[2rem\]{
+  padding-right: 2rem;
+}
+.pl-\[3rem\]{
+  padding-left: 3rem;
+}
+.pl-\[6rem\]{
+  padding-left: 6rem;
+}
+.pl-\[2rem\]{
+  padding-left: 2rem;
+}
 .text-left{
   text-align: left;
 }
