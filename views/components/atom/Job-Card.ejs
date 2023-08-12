@@ -1,5 +1,5 @@
 <div
-  class="flex border-2 border-gray-500 py-6 px-4 text-xs rounded-xl job-card md:w-[100%] mb-4 font-montserrat shadow-sm bg-[#fffbea]"
+  class="flex border-b-2 border-[#EBEBEB] py-6 px-4 text-xs job-card md:w-[100%] mb-4 font-montserrat"
   onclick="toggleDetails(this)"
 >
   <div class="w-[20%] flex items-start md:w-[15%]">
@@ -13,9 +13,9 @@
     <p class="font-bold font-open text-lg text-[#13B0A7]"><%= jobListing %></p>
     <p class="text-[15px] text-gray-500"><%= employerName %></p>
     <div class="flex gap-4 flex-wrap">
-      <p class="text-[12px]"><%= jobCategory %></p>
+      <p class="font-open font-semibold text-sm"><%= jobCategory %></p>
       <div class="flex gap-4">
-        <p class="text-[12px]"><%= jobSalary %></p>
+        <p class="text-sm text-[#959595] font-open"><%= jobSalary %></p>
 
         <p class="text-[12px]"><%= jobType %></p>
       </div>
@@ -45,6 +45,6 @@
 <!-- JavaScript to toggle details -->
 <script>
   function toggleDetails(card) {
-    card.classList.toggle('expanded');
+    card.classList.toggle("expanded");
   }
 </script>

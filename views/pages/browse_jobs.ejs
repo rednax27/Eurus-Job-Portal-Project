@@ -674,29 +674,37 @@
     </div>
 
     <div
-      class="w-full md:w-1/4 flex flex-col gap-8 px-8 py-3 items-center justify-start border-2 border-black shadow-sm rounded-2xl bg-[#fffbea] md:ml-4"
+      class="w-full md:w-1/4 flex flex-col gap-8 px-8 py-3 items-center justify-start md:ml-4 border-l-4"
     >
       <div class="flex flex-col gap-4">
         <h3 class="font-open font-semibold text-black text-base">Find Jobs</h3>
-        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+        <a
+          href=""
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
           >Browse All</a
         >
-        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+        <a
+          href=""
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
           >Browse with my Skills</a
         >
-        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+        <a
+          href=""
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
           >Browse with top</a
         >
-        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+        <a
+          href=""
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
           >Browse Local Jobs</a
         >
-        <a href="" class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2]"
+        <a
+          href=""
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
           >Browse Categories</a
         >
       </div>
-      <div
-        class="flex flex-col gap-4 bg-[#fffbea] p-3 border-2 border-black shadow-sm"
-      >
+      <div class="flex flex-col gap-4 p-3">
         <p class="text-center font-bold">Featured Members</p>
         <div class="flex flex-col gap-4">
           <div class="job-card">
@@ -719,11 +727,11 @@
 
 <script>
   // Initialize Swiper
-  const swiper = new Swiper('#jobCards', {
+  const swiper = new Swiper("#jobCards", {
     slidesPerView: 1,
     spaceBetween: 560,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
   });
