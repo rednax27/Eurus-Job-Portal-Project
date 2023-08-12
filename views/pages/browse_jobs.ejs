@@ -122,7 +122,7 @@
 >
   <div class="w-full p-0 flex flex-col md:flex-row justify-between">
     <div class="w-full md:w-3/4">
-      <div class="flex flex-col gap-2 p-6 border-2 rounded-2xl bg-white">
+      <div class="flex flex-col gap-2 p-6 bg-white">
         <span class="font-light font-open text-xl">Filter by:</span>
         <div class="flex flex-wrap gap-8">
           <a href="" class="flex font-open font-sm text-[#636363]">Skills</a>
@@ -654,27 +654,27 @@
         <h3 class="font-open font-semibold text-black text-base">Find Jobs</h3>
         <a
           href=""
-          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#14BDB3] hover:font-semibold"
           >Browse All</a
         >
         <a
           href=""
-          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#14BDB3] hover:font-semibold"
           >Browse with my Skills</a
         >
         <a
           href=""
-          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#14BDB3] hover:font-semibold"
           >Browse with top</a
         >
         <a
           href=""
-          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#14BDB3] hover:font-semibold"
           >Browse Local Jobs</a
         >
         <a
           href=""
-          class="text-sm text-[#7D7D7D] font-open hover:text-[#6684F2] hover:font-semibold"
+          class="text-sm text-[#7D7D7D] font-open hover:text-[#14BDB3] hover:font-semibold"
           >Browse Categories</a
         >
       </div>
@@ -683,14 +683,15 @@
         <div class="flex flex-col gap-4">
           <div class="job-card">
             <%- include('../components/atom/Featured-Member-Card', {companyLogo:
-            "assets/images/woman 1.jpeg", companyName: `Sasha Grey`,
-            companyLogo: "assets/images/woman 1.jpeg" }); %> <%-
+            "assets/images/icons/bord.svg", companyName: `Bord`, companyLogo:
+            "assets/images/icons/bord.svg" }); %> <%-
             include('../components/atom/Featured-Member-Card', {companyLogo:
-            "assets/images/man 1.jpg", companyName: `Lawrence Cruz` }); %> <%-
-            include('../components/atom/Featured-Member-Card', {companyLogo:
-            "assets/images/woman 2.jpg", companyName: `Katie Santos` }); %> <%-
-            include('../components/atom/Featured-Member-Card', {companyLogo:
-            "assets/images/man 2.jpg", companyName: `Juan Perez` }); %>
+            "assets/images/icons/decorateur.svg", companyName: `Decorateur` });
+            %> <%- include('../components/atom/Featured-Member-Card',
+            {companyLogo: "assets/images/icons/gojo.svg", companyName: `Gojo`
+            }); %> <%- include('../components/atom/Featured-Member-Card',
+            {companyLogo: "assets/images/icons/luxury.svg", companyName:
+            `Luxury` }); %>
           </div>
         </div>
       </div>
