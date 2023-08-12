@@ -11,11 +11,11 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply rounded-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-black border-[#CCCCDF] border-1 hover:bg-[#14BDB3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10968E] text-center;
+  @apply rounded-3xl bg-white px-3.5 py-2.5 text-sm font-semibold text-black border-[#CCCCDF] border hover:bg-[#14BDB3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10968E] text-center;
 }
 
 .btn-secondary {
-  @apply rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black border-[#CCCCDF] border-1 hover:bg-[#14BDB3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10968E];
+  @apply rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black border-[#CCCCDF] border hover:bg-[#14BDB3] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10968E];
 }
 
 /* Add this CSS to style the expanded job details */
