@@ -51,6 +51,7 @@ module.exports = {
       },
       backgroundImage: {
         cat: 'url(https://i.pinimg.com/736x/69/2f/35/692f3538fe4e900312f06bae72cef852.jpg)',
+        cats: 'url(https://t3.ftcdn.net/jpg/04/53/92/04/360_F_453920448_yMcff4E8ctdXQQegdaQ7WcXnHM3y3aMM.jpg)',
       },
     },
   },

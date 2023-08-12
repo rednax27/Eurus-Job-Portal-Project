@@ -1,10 +1,10 @@
-<% title = "Employer Details" %> <%- include('../partials/shared/header-2'); %>
+<% title = "Job Details" %> <%- include('../partials/shared/header-2'); %>
 <!-- hero container -->
 <div
-  class="w-full bg-cats bg-cover bg-no-repeat h-[40vh] border border-black flex justify-center items-end font-montserrat"
+  class="w-full bg-blue-300 h-[40vh] border border-black flex justify-center items-end"
 >
   <%- include('../components/atom/Hero-Photo', {candidatePhoto:
-  "assets/images/icons/Mechanic-repair-professions-jobs-man.svg"}); %>
+  "assets/images/icons/Engineer-professions-jobs-worker-man.svg"}); %>
 </div>
 
 <div class="flex flex-wrap md:flex-nowrap w-full">
@@ -32,24 +32,22 @@
         include('../components/atom/Button.ejs', {buttonText: "Apply",
         buttonVariant: "primary"}); %>
       </div>
-      <div
-        class="flex justify-around border-2 border-black items-center py-4 bg-[#fffbea] rounded-2xl"
-      >
-        <p class="font-semibold text-lg">Portfolio</p>
-        <div class="flex gap-4 items-center">
+      <div class="flex justify-around border border-black items-center">
+        <p class="">Portfolio</p>
+        <div class="flex gap-4 items-center border border-black">
           <button
-            class="flex items-center border-2 border-black rounded-full px-2 bg-white"
+            class="flex items-center border border-black rounded-full px-2"
           >
             +
           </button>
-          <p class="font-bold">Add Portfolio</p>
+          <p class="">Project of Company</p>
         </div>
       </div>
       <div
-        class="flex gap-4 justify-around items-center p-8 flex-wrap w-full mb-6"
+        class="flex gap-4 justify-center items-center border border-black p-8 flex-wrap w-full"
       >
         <div
-          class="flex justify-center items-center border-2 border-black gap-4 p-12"
+          class="flex justify-center items-center border border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -59,7 +57,7 @@
           </div>
         </div>
         <div
-          class="flex justify-center items-center border-2 border-black gap-4 p-12"
+          class="flex justify-center items-center border border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -69,7 +67,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-center items-center border-2 border-black gap-4 p-12"
+          class="flex flex-col justify-center items-center border border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -79,7 +77,7 @@
           </div>
         </div>
         <div
-          class="flex justify-center items-center border-2 border-black gap-4 p-12"
+          class="flex justify-center items-center border border-black gap-4 p-12"
         >
           <div
             class="flex flex-col justify-center items-center border border-black p-2"
@@ -89,7 +87,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-4 p-2 w-full">
+      <div
+        class="flex flex-col gap-4 p-2 border border-black w-full md:w-[70vw]"
+      >
         <%- include('../components/atom/Employer-Profile', {
         employerSelfDescription: ` Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Assumenda ipsa minus vitae cupiditate aliquam expedita

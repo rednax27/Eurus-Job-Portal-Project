@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Markazi Text:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -58,4 +58,8 @@ code {
 }
 .anim-8s {
   animation-duration: 8s !important;
+}
+
+.background-one {
+  background-image: url('url(https://i.pinimg.com/736x/69/2f/35/692f3538fe4e900312f06bae72cef852.jpg)');
 }

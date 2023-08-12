@@ -1,11 +1,13 @@
-<div class="flex flex-col gap-4 container py-4 px-8">
-  <div class="flex flex-col p-4 gap-4 border border-black">
-    <p class="">ABOUT</p>
-    <p class="mt-2"><%= employerSelfDescription %></p>
+<div class="flex flex-col gap-4 w-full">
+  <div
+    class="flex flex-col p-4 gap-4 border-2 border-black rounded-3xl bg-[#fffbea] w-[85%] ml-8 md:ml-24"
+  >
+    <p class="font-bold">ABOUT</p>
+    <p class="mt-2 w-[70%]"><%= employerSelfDescription %></p>
   </div>
-  <div class="flex flex-col p-4 gap-4 border border-black">
-    <p class="">Skills</p>
-    <div class="mt-2">
+  <div class="flex flex-col p-4 gap-4 items-center">
+    <p class="">SKILLS</p>
+    <div class="my-2">
       <div class="flex gap-4 flex-wrap">
         <button class="rounded-3xl bg-gray-400 px-2">
           <%= employerSkills %>
@@ -21,22 +23,26 @@
         </button>
       </div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
-      <p class="">Experience</p>
-      <div class="">
-        <p class=""><%= employerProfession %></p>
+    <div
+      class="flex flex-col p-4 gap-4 border border-black w-[85%] bg-[#fffbea] rounded-3xl"
+    >
+      <p class="font-bold">EXPERIENCE</p>
+      <div class="w-[70%]">
+        <p class="font-semibold"><%= employerProfession %></p>
         <div class="flex gap-4">
-          <p class=""><%= employerPastCompany %></p>
-          <p class=""><%= employerCompanyDuration %></p>
+          <p class="font-semibold"><%= employerPastCompany %></p>
+          <p class="font-semibold"><%= employerCompanyDuration %></p>
         </div>
-        <p class="mt-2"><%= employerProfessionDescription %></p>
+        <p class="mt-3"><%= employerProfessionDescription %></p>
       </div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
+    <div
+      class="flex flex-col p-4 gap-4 border border-black w-[85%] bg-[#fffbea] rounded-3xl"
+    >
       <div class="flex flex-col gap-4">
-        <p class="">Education</p>
-        <div class="flex flex-col p-4 gap-4">
-          <p class=""><%= employerSchool %></p>
+        <p class="font-bold">EDUCATION</p>
+        <div class="flex flex-col gap-4 p-4">
+          <p class="font-semibold"><%= employerSchool %></p>
           <p class=""><%= employerEducation %></p>
           <p class=""><%= employerEducationPeriod %></p>
           <p class=""><%= employerDegree %></p>
@@ -44,59 +50,86 @@
       </div>
       <div class="flex flex-col p-4 gap-4"></div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black">
-      <div class="flex flex-col gap-4">
-        <p class="">Award</p>
+    <div
+      class="flex flex-col p-4 gap-4 border border-black w-[85%] bg-[#fffbea] rounded-3xl"
+    >
+      <div class="flex flex-col gap-4 rounded-3xl">
+        <p class="font-bold">AWARDS</p>
         <div class="flex flex-col p-4 gap-4">
-          <p class=""><%= employerAward %></p>
+          <p class="font-semibold"><%= employerAward %></p>
           <p class=""><%= employerAwarder %></p>
           <p class=""><%= employerAwardYear %></p>
         </div>
       </div>
     </div>
-    <div class="flex flex-col p-4 gap-4 border border-black w-full">
-      <p class="">Company Introduction</p>
-      <div class="flex justify-around items-center p-2">
-        <p class=""><%= employerCompany %></p>
-        <p class=""><%= employerCompanyIntroduction %></p>
+    <div
+      class="flex flex-col gap-4 border border-black w-[85%] items-center p-6 bg-[#fffbea] rounded-3xl"
+    >
+      <p class="font-bold container text-left">COMPANY INTRODUCTION</p>
+      <div class="flex justify-between items-center p-2">
+        <p class="font-bold"><%= employerCompany %></p>
+        <p class="w-[60%]"><%= employerCompanyIntroduction %></p>
       </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">FIELDS</p>
-        <p class=""><%= companyFields %></p>
-      </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">EMPLOYEES</p>
-        <p class=""><%= companyEmployeeCount %></p>
-      </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">INTERESTED IN CANDIDATES FOR</p>
-        <div class="flex gap-4 flex-wrap">
-          <button class="rounded-3xl bg-gray-400 px-2">
-            <%= employerSkills %>
-          </button>
-          <button class="rounded-3xl bg-gray-400 px-2">
-            <%= employerSkills2 %>
-          </button>
-          <button class="rounded-3xl bg-gray-400 px-2">
-            <%= employerSkills %>
-          </button>
+    </div>
+
+    <div
+      class="flex flex-row gap-4 border border-black w-[85%] items-around bg-[#fffbea] p-4 rounded-3xl"
+    >
+      <div class="flex flex-col items-start w-fit md:w-1/2">
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">FIELDS</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">EMPLOYEES</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">INTERESTED IN CANDIDATES FOR</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">SALARY RANGE</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">WEBSITE</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">PHONE NUMBER</p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold">LOCATION</p>
         </div>
       </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">SALARY RANGE</p>
-        <p class="">$<%= employerSalaryRange %>USD/ month</p>
-      </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">WEBSITE</p>
-        <p class=""><%= employerWebsite %></p>
-      </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">PHONE NUMBER</p>
-        <p class=""><%= employerContact %></p>
-      </div>
-      <div class="flex justify-around items-center p-2">
-        <p class="">LOCATION</p>
-        <p class=""><%= employerLocation %></p>
+      <div class="flex flex-col items-start w-fit md:w-1/2">
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold"><%= companyFields %></p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="font-bold"><%= companyEmployeeCount %></p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <div class="flex gap-4 flex-wrap">
+            <button class="rounded-3xl bg-gray-400 px-2">
+              <%= employerSkills %>
+            </button>
+            <button class="rounded-3xl bg-gray-400 px-2">
+              <%= employerSkills2 %>
+            </button>
+            <button class="rounded-3xl bg-gray-400 px-2">
+              <%= employerSkills %>
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class="">$<%= employerSalaryRange %></p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class=""><%= employerWebsite %></p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class=""><%= employerContact %></p>
+        </div>
+        <div class="flex justify-around items-center p-2">
+          <p class=""><%= employerLocation %></p>
+        </div>
       </div>
     </div>
   </div>
