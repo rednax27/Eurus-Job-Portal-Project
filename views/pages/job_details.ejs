@@ -123,35 +123,40 @@
   >
     <!-- #profile section - Will be placed first in mobile view -->
     <div
-      class="w-full md:w-1/4 flex flex-col gap-8 border border-black p-4 md:order-4"
-      id="profile"
+      class="w-full md:w-1/4 flex flex-col gap-8 border-2 border-gray-300 p-4 md:order-4"
     >
       <div class="flex flex-col gap-4">
         <%- include('../components/atom/Company-Profile-S', { companyLogo:
-        "assets/images/icons/Engineer-professions-jobs-worker-man.svg",
-        companyName: "Bubalus Company", companyLocation: "Hanoi, Vietnam",
-        jobType: "Full-time", JobCategory: `Web Services, Design Services` });
-        %>
+        "assets/images/company-logo1.svg", companyName: "Atomix",
+        companyLocation: "Hanoi, Vietnam", jobType: "Full-time", JobCategory:
+        `Cloud Consultation, Cloud Services` }); %>
       </div>
     </div>
 
     <div class="w-full md:w-3/4">
       <div class="flex flex-col gap-4 p-2 border border-black">
         <%- include('../components/atom/Job-Details-Full', { jobHeader: `Design
-        a Professional Website Magazine`, jobLocation: "Hanoi, Vietnam",
-        jobType: "Full-time", jobSalary: "$1000-1500", jobRoles: `Web Services,
-        Design Services`, jobReviews: "14", jobDescription: `Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Ducimus molestiae a explicabo,
-        quia maxime, quis accusamus veniam debitis neque voluptas libero saepe,
-        ex magnam nobis vitae excepturi quos reprehenderit. Odio.`,
-        jobRequirements: `Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Quam, ea? Similique harum, incidunt, quaerat ullam impedit numquam
-        quae ducimus recusandae tenetur fugit officiis nihil odit molestiae
-        excepturi voluptates, culpa praesentium.`, skillRequired: `Graphic
-        Design, Banner Design, Logo Design, Photo Editing`, jobCategory: `Web
-        Services, Design Services`, employeeCount: "25-130", salaryRange:
-        `$1000-1700 USD/month`, companyWebsite: `www.loremipsum.com`,
-        companyLocation: `Berlin, Germany` }); %>
+        a Professional Website`, jobLocation: "Hanoi, Vietnam", jobType:
+        "Full-time", jobSalary: "$1000-1500", jobRoles: `Web Development, Design
+        Services, SEO Optimization`, jobReviews: "14", jobDescription: `We are
+        seeking a talented and creative Website Designer to join our dynamic
+        team. The ideal candidate will have a passion for designing visually
+        appealing and user-friendly websites that resonate with our diverse
+        clientele.`, jobRequirements: `Collaborate with stakeholders to
+        understand business requirements and translate them into functional
+        design.`, jobRequirements2: `Create wireframes, mockups, and prototypes
+        that effectively communicate design ideas.`, jobRequirements3: `Design
+        visually appealing web pages with a focus on user experience and brand
+        alignment.`, jobRequirements4: `Work closely with developers to ensure
+        designs are implemented accurately.`, jobRequirements5: `Conduct user
+        testing to optimize design for usability and performance.`,
+        jobRequirements6: `Stay up-to-date with current design trends and
+        technologies to ensure our web design remains competitive.`,
+        skillRequired: `Graphic Design, Banner Design, Logo Design, Photo
+        Editing`, jobCategory: `Cloud Consultation, Cloud Services`,
+        employeeCount: "50-75", salaryRange: `$1000-1700 USD/month`,
+        companyWebsite: `www.atomix.com`, companyLocation: `Hanoi, Vietnam` });
+        %>
       </div>
       <!-- job list -->
       <div class="p-4 overflow-hidden">

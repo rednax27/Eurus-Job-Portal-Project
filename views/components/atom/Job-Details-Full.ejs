@@ -1,74 +1,96 @@
 <div class="flex flex-col w-full gap-4 p-4 items-center border border-black">
-  <div class="flex flex-col gap-4 items-center border border-black p-4">
+  <div
+    class="flex flex-col gap-4 items-center border-2 border-gray-300 p-4 container"
+  >
     <p class="text-2xl font-bold"><%= jobHeader %></p>
-    <div class="flex gap-4">
+    <div class="flex gap-10">
       <p class=""><%= jobLocation %></p>
-      <p class="">" . "</p>
+
       <p class=""><%= jobType %></p>
-      <p class="">" . "</p>
+
       <p class=""><%= jobSalary %></p>
     </div>
-    <div class="flex justify-between p-2">
-      <p class=""><%= jobRoles %></p>
-      <p class=""><%= jobReviews %></p>
+    <div class="flex justify-between p-2 gap-8">
+      <p class="text-sm"><%= jobRoles %></p>
+      <p class="text-sm text-gray-500"><%= jobReviews %> Reviews</p>
     </div>
   </div>
   <div
     class="flex flex-col gap-4 flex-wrap items-center border border-black p-6 w-full"
   >
-    <p class="border border-black w-[65%]">Job Description</p>
+    <p class="w-[65%] font-semibold">Job Description</p>
     <p class="text-left w-[65%]"><%= jobDescription %></p>
-    <p class="w-[65%]">Requirements</p>
-    <p class="text-left w-[65%]"><%= jobRequirements %></p>
+    <p class="w-[65%] font-semibold">Requirements</p>
+    <ul class="w-[65%]">
+      <li class="mb-1">
+        <p class="text-left w-[65%]">- <%= jobRequirements %></p>
+      </li>
+      <li>
+        <p class="text-left w-[65%]">- <%= jobRequirements2 %></p>
+      </li>
+
+      <li class="mb-1">
+        <p class="text-left w-[65%]">- <%= jobRequirements3 %></p>
+      </li>
+      <li class="mb-1">
+        <p class="text-left w-[65%]">- <%= jobRequirements4 %></p>
+      </li>
+      <li class="mb-1">
+        <p class="text-left w-[65%]">- <%= jobRequirements5 %></p>
+      </li>
+      <li class="mb-1">
+        <p class="text-left w-[65%]">- <%= jobRequirements6 %></p>
+      </li>
+    </ul>
   </div>
   <div class="flex flex-col gap-4 border border-black p-6 items-center w-full">
-    <p class="text-left w-[65%]">Skills required</p>
+    <p class="text-left w-[65%] font-semibold">Skills required</p>
     <p class="w-[65%]"><%= skillRequired %></p>
   </div>
   <div class="flex flex-col items-center gap-4 border border-black p-6 w-full">
-    <p class="text-left w-[65%]">Company Introduction</p>
+    <p class="text-left w-[65%] font-semibold">Company Introduction</p>
     <div class="flex justify-around gap-4 w-[65%]">
       <div class="flex flex-col gap-4">
-        <p class="">FIELDS</p>
+        <p class="font-semibold">FIELDS</p>
         <p class=""><%= jobCategory %></p>
       </div>
       <div class="flex flex-col gap-4 flex-wrap">
-        <p class="">INTERESTED IN CANDIDATES FOR</p>
+        <p class="font-semibold">INTERESTED IN CANDIDATES FOR</p>
         <div class="flex flex-wrap gap-4">
           <button class="bg-gray-400 max-w-[100%] rounded-3xl px-2">
-            asdasd
+            Cloud Security
           </button>
           <button class="bg-gray-400 max-w-[100%] rounded-3xl px-2">
-            asdasd
+            Project Management
           </button>
           <button class="bg-gray-400 max-w-[100%] rounded-3xl px-2">
-            asdasd
+            Web Design
           </button>
         </div>
       </div>
       <div class="flex flex-col gap-4">
-        <p class="">EMPLOYEES</p>
+        <p class="font-semibold">EMPLOYEES</p>
         <p class=""><%= employeeCount %></p>
       </div>
     </div>
   </div>
   <div class="flex justify-around gap-4 border border-black p-6 w-full">
-    <div class="flex justify-between gap-4 w-[65%] border border-black">
+    <div class="flex justify-between gap-4 w-[65%]">
       <div class="flex flex-col gap-4">
-        <p class="">SALARY RANGE</p>
+        <p class="font-semibold">SALARY RANGE</p>
         <p class=""><%= salaryRange %></p>
       </div>
       <div class="flex flex-col gap-4">
-        <p class="">WEBSITE</p>
+        <p class="font-semibold">WEBSITE</p>
         <p class=""><%= companyWebsite %></p>
       </div>
       <div class="flex flex-col gap-4">
-        <p class="">LOCATION</p>
+        <p class="font-semibold">LOCATION</p>
         <p class=""><%= companyLocation %></p>
       </div>
     </div>
   </div>
-  <div class="flex flex-col gap-4">
-    <p class="">APPS WE USE TO STAY CONNECTED</p>
+  <div class="flex flex-col gap-4 mt-4">
+    <p class="text-lg">APPS WE USE TO STAY CONNECTED</p>
   </div>
 </div>

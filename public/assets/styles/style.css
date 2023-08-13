@@ -1701,6 +1701,12 @@ input[type="range"]:active::-webkit-slider-thumb{
 .w-screen{
   width: 100vw;
 }
+.w-\[25\%\]{
+  width: 25%;
+}
+.w-\[50\%\]{
+  width: 50%;
+}
 .min-w-0{
   min-width: 0px;
 }
@@ -2165,6 +2171,12 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .gap-8{
   gap: 2rem;
+}
+.gap-20{
+  gap: 5rem;
+}
+.gap-10{
+  gap: 2.5rem;
 }
 .gap-x-14{
   -moz-column-gap: 3.5rem;
@@ -2940,6 +2952,9 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .p-\[auto\]{
   padding: auto;
+}
+.p-5{
+  padding: 1.25rem;
 }
 .\!py-0{
   padding-top: 0px !important;
