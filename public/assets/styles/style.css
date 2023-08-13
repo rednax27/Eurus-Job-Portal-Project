@@ -1171,6 +1171,9 @@ input[type="range"]:active::-webkit-slider-thumb{
 .mt-\[0\.15rem\]{
   margin-top: 0.15rem;
 }
+.mr-48{
+  margin-right: 12rem;
+}
 .box-border{
   box-sizing: border-box;
 }
@@ -2249,6 +2252,11 @@ input[type="range"]:active::-webkit-slider-thumb{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.space-y-24 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
 }
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
@@ -5559,6 +5567,10 @@ code {
     height: 90vh;
   }
 
+  .sm\:h-\[160vh\]{
+    height: 160vh;
+  }
+
   .sm\:w-\[72\.1875rem\]{
     width: 72.1875rem;
   }
@@ -5664,6 +5676,11 @@ code {
     line-height: 1rem;
   }
 
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:ring-1{
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -5738,6 +5755,14 @@ code {
     height: 80vh;
   }
 
+  .md\:h-\[120vh\]{
+    height: 120vh;
+  }
+
+  .md\:h-\[140vh\]{
+    height: 140vh;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -5804,6 +5829,10 @@ code {
 
   .md\:w-\[90\%\]{
     width: 90%;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
   }
 
   .md\:-translate-y-20{
@@ -5987,6 +6016,10 @@ code {
     height: 80vh;
   }
 
+  .lg\:h-\[120vh\]{
+    height: 120vh;
+  }
+
   .lg\:w-10{
     width: 2.5rem;
   }
@@ -6013,6 +6046,10 @@ code {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-\[80\%\]{
+    width: 80%;
   }
 
   .lg\:max-w-2xl{
@@ -6158,6 +6195,11 @@ code {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 1280px){
@@ -6203,12 +6245,28 @@ code {
     height: 100vh;
   }
 
+  .xl\:h-\[140vh\]{
+    height: 140vh;
+  }
+
   .xl\:w-80{
     width: 20rem;
   }
 
   .xl\:w-\[32rem\]{
     width: 32rem;
+  }
+
+  .xl\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .xl\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .xl\:w-\[90\%\]{
+    width: 90%;
   }
 
   .xl\:max-w-2xl{
@@ -6284,8 +6342,16 @@ code {
     height: 100vh;
   }
 
+  .\32xl\:h-\[150vh\]{
+    height: 150vh;
+  }
+
   .\32xl\:w-\[36rem\]{
     width: 36rem;
+  }
+
+  .\32xl\:w-\[60\%\]{
+    width: 60%;
   }
 
   .\32xl\:text-2xl{
