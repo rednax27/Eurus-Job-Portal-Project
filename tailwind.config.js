@@ -52,6 +52,13 @@ module.exports = {
       backgroundImage: {
         cat: 'url(https://i.pinimg.com/736x/69/2f/35/692f3538fe4e900312f06bae72cef852.jpg)',
         cats: 'url(https://t3.ftcdn.net/jpg/04/53/92/04/360_F_453920448_yMcff4E8ctdXQQegdaQ7WcXnHM3y3aMM.jpg)',
+        portfolio1: 'url(https://fleurbudget.com/fleur_website.png)',
+        portfolio2:
+          'url(https://www.masterslider.com/wp-content/uploads/sites/5/2017/10/Mobile-App-Presentation-1.jpg)',
+        portfolio3:
+          'url(https://www.masterslider.com/wp-content/uploads/sites/5/2017/10/Mobile-App-Presentation-1.jpg)',
+        portfolio4:
+          'url(https://elements-cover-images-0.imgix.net/7fce7a4e-bf52-4408-8406-f5370f5e22cb?auto=compress%2Cformat&fit=max&w=433&s=c71b01c32e339a9ff7818285b4dc32f9)',
       },
     },
   },
